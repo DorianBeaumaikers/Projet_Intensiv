@@ -1,0 +1,35 @@
+@import './INTENSIV_CSS/index.scss';
+
+body {
+    background: linear-gradient(to bottom, $color-1, $color-2);
+}
+
+// ------------------------------
+// MAIN HEADER
+// ------------------------------
+.main-header {
+    margin: 5rem 0;
+    &__title1 {
+        color: #fff;
+    }
+    &__title2 {
+        color: #fff;
+        opacity: .5;
+    }
+}
+
+// ------------------------------
+// MAIN CONTENT
+// ------------------------------
+.main-content {
+    background: #fff;
+    padding: 2em;
+    border-radius: $border-radius-default;
+}
+
+// ------------------------------
+// MAIN FOOTER
+// ------------------------------
+.main-footer {
+
+}

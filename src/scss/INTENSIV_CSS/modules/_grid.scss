@@ -1,0 +1,37 @@
+@use "sass:map";
+
+// ./INTENSIV_CSS/modules/_grid.scss
+// MODULE DE GRILLE RESPONSIVE
+
+// VARIABLES MODULE GRID
+
+$gapH: 1em; // Goutière Horizontale
+$gapV: 1em; // Goutière verticale
+
+// GRID SYSTEM 12 colonnes
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $gapV $gapH;
+    &.grid-no-gap {
+        gap: 0 0;
+    }
+    > * {
+        grid-column: span 12;
+        grid-row: span 1;
+    }
+}
+
+@each $size, $values in $screen-sizes {
+    @media screen and (min-width: map-get($values, 'breakpoint')) {
+        @for $i from 1 through 12 {
+            .col-#{$size}-#{$i} {
+                grid-column: span + ' ' + $i;
+            }
+            .row-#{$size}-#{$i} {
+                grid-row: span + ' ' + $i;
+            }
+        }
+    }
+}
+

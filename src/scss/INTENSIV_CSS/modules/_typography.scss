@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+// TYPOGRAPHY VARIABLES
+
+    // PARAGRAPHES
+    $font-1: 'Source Sans Pro', sans-serif;
+    $font-color-default: $color-text;
+    $font-size-default: 1.1em;
+    $font-weight-default: 300;
+    $line-height-default: 1.65;
+
+    // HEADERS
+    $font-2: 'Source Sans Pro', sans-serif;
+    $font-color-h1: $color-text;
+    $font-size-h1: 2.5rem;
+    $font-weight-h1: 300;
+    $line-height-h1: 1.2;
+    $margin-h1: 0 0 .7rem 0;
+    $letter-spacing-h1: -.025rem;
+
+    $font-color-h2: $color-text;
+    $font-size-h2: 1.5rem;
+    $font-weight-h2: 300;
+    $line-height-h2: 1.5;
+    $margin-h2: 0 0 .7rem 0;
+    $letter-spacing-h2: -.025rem;
+
+    $font-color-h3: $color-text;
+    $font-size-h3: 1.25rem;
+    $font-weight-h3: 300;
+    $line-height-h3: 1.5;
+    $margin-h3: 0 0 .7rem 0;
+    $letter-spacing-h3: -.025rem;
+
+    $font-color-h4: $color-text;
+    $font-size-h4: 1.1rem;
+    $font-weight-h4: 300;
+    $line-height-h4: 1.2;
+    $margin-h4: 0 0 .7rem 0;
+    $letter-spacing-h4: -.025rem;
+
+    // LINKS
+    $link-color: $color-text;
+    $link-decoration: underline dotted;
+    
+    $link-hover-color: $color-text;
+    $link-hover-decoration: none;
+
+    // CODE
+    $code-color: $color-text;
+    $code-background: $color-neutral-1;
+    $code-padding: .3em;
+    $code-border: $color-neutral-2 1px solid;
+    $code-border-radius: $border-radius-default;
+
+    // HR
+    $hr-height: 1px;
+    $hr-color: $color-neutral-2;
+    $hr-margin: 3rem 0;
+
+    // BLOCKQUOTE
+
+
+// DEFAULT SPECIFICATIONS
+
+body, .default {
+    font-family: $font-1;
+    font-size: $font-size-default;
+    font-weight: $font-weight-default;
+    line-height: $line-height-default;
+    color: $font-color-default;
+}
+
+a, .link {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+}
+
+code, .code {
+    color: $code-color;
+    background: $code-background;
+    padding: $code-padding;
+    border: $code-border;
+    border-radius: $code-border-radius;
+}
+
+hr, .hr {
+    height: $hr-height;
+    background: $hr-color;
+    border: none;
+    margin: $hr-margin;
+}
+
+h1, .h1 {
+    font-family: $font-2;
+    color: $font-color-h1;
+    font-size: $font-size-h1;
+    font-weight: $font-weight-h1;
+    line-height: $line-height-h1;
+    margin: $margin-h1;
+    letter-spacing: $letter-spacing-h1;
+}
+
+h2, .h2 {
+    font-family: $font-2;
+    color: $font-color-h2;
+    font-size: $font-size-h2;
+    font-weight: $font-weight-h2;
+    line-height: $line-height-h2;
+    margin: $margin-h2;
+    letter-spacing: $letter-spacing-h2;
+}
+
+h3, .h3 {
+    font-family: $font-2;
+    color: $font-color-h3;
+    font-size: $font-size-h3;
+    font-weight: $font-weight-h3;
+    line-height: $line-height-h3;
+    margin: $margin-h3;
+    letter-spacing: $letter-spacing-h3;
+}
+
+h4, .h4 {
+    font-family: $font-2;
+    color: $font-color-h4;
+    font-size: $font-size-h4;
+    font-weight: $font-weight-h4;
+    line-height: $line-height-h4;
+    margin: $margin-h4;
+    letter-spacing: $letter-spacing-h4;
+}

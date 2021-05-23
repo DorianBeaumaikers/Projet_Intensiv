@@ -1,0 +1,38 @@
+
+// COLORS VARIABLES
+
+    $color-1: #5E4D92;
+    $color-2: #E07985;
+    $color-3: #8CC9F0;
+    $color-text: #636363;
+    $color-neutral-1: #F7F7F7;
+    $color-neutral-2: #DDDDDD; 
+
+    $color-block-dim: 120px;
+
+// COLOR BLOCKS
+
+.color-block {
+    width: $color-block-dim;
+    height: $color-block-dim;
+    display: inline-block;
+
+    &.color-1 {
+        background: $color-1;
+    }
+    &.color-2 {
+        background: $color-2;
+    }
+    &.color-3 {
+        background: $color-3;
+    }
+    &.color-text {
+        background: $color-text;
+    }
+    &.color-neutral-1 {
+        background: $color-neutral-1;
+    }
+    &.color-neutral-2 {
+        background: $color-neutral-2;
+    }
+}
