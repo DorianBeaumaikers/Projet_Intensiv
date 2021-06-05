@@ -1,26 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
 
 // TYPOGRAPHY VARIABLES
 
     // PARAGRAPHES
-    $font-1: 'Source Sans Pro', sans-serif;
+    $font-1: 'Merriweather', Georgia, serif;
+
     $font-color-default: $color-text;
     $font-size-default: 1.1em;
     $font-weight-default: 300;
     $line-height-default: 1.65;
 
     // HEADERS
-    $font-2: 'Source Sans Pro', sans-serif;
+    $font-2: 'Source Sans Pro', Helvetica, sans-serif;
+
     $font-color-h1: $color-text;
     $font-size-h1: 2.5rem;
-    $font-weight-h1: 300;
+    $font-weight-h1: 900;
     $line-height-h1: 1.2;
     $margin-h1: 0 0 .7rem 0;
     $letter-spacing-h1: -.025rem;
 
     $font-color-h2: $color-text;
     $font-size-h2: 1.5rem;
-    $font-weight-h2: 300;
+    $font-weight-h2: 1500;
     $line-height-h2: 1.5;
     $margin-h2: 0 0 .7rem 0;
     $letter-spacing-h2: -.025rem;
@@ -55,7 +57,7 @@
 
     // HR
     $hr-height: 1px;
-    $hr-color: $color-neutral-2;
+    $hr-color: $color-neutral-1;
     $hr-margin: 3rem 0;
 
     // BLOCKQUOTE

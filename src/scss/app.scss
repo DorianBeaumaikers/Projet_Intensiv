@@ -1,7 +1,7 @@
 @import './INTENSIV_CSS/index.scss';
 
 body {
-    background: linear-gradient(to bottom, $color-1, $color-2);
+    background: radial-gradient(circle at top, $color-text, $color-2 50%);
 }
 
 // ------------------------------
@@ -11,10 +11,7 @@ body {
     margin: 5rem 0;
     &__title1 {
         color: #fff;
-    }
-    &__title2 {
-        color: #fff;
-        opacity: .5;
+        border: #fff solid 2px;
     }
 }
 
