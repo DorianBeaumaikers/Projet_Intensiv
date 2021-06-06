@@ -1,45 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 // TYPOGRAPHY VARIABLES
 
     // PARAGRAPHES
-    $font-1: 'Merriweather', Georgia, serif;
+    $font-1: 'Merriweather', serif;
 
     $font-color-default: $color-text;
     $font-size-default: 1.1em;
     $font-weight-default: 300;
     $line-height-default: 1.65;
+    $margin-p: 2rem;
 
     // HEADERS
     $font-2: 'Source Sans Pro', Helvetica, sans-serif;
 
     $font-color-h1: $color-text;
-    $font-size-h1: 2.5rem;
-    $font-weight-h1: 900;
-    $line-height-h1: 1.2;
-    $margin-h1: 0 0 .7rem 0;
-    $letter-spacing-h1: -.025rem;
+    $font-size-h1: 4.5rem;
+    $line-height-h1: 1;
+    $margin-h1: 0 0 3rem 0;
+    $letter-spacing-h1: .2rem;
 
     $font-color-h2: $color-text;
-    $font-size-h2: 1.5rem;
-    $font-weight-h2: 1500;
+    $font-size-h2: 2.1rem;
     $line-height-h2: 1.5;
-    $margin-h2: 0 0 .7rem 0;
-    $letter-spacing-h2: -.025rem;
+    $margin-h2: 0 0 1.2rem 0;
+    $letter-spacing-h2: .05rem;
 
     $font-color-h3: $color-text;
-    $font-size-h3: 1.25rem;
-    $font-weight-h3: 300;
+    $font-size-h3: 1.5rem;
     $line-height-h3: 1.5;
-    $margin-h3: 0 0 .7rem 0;
-    $letter-spacing-h3: -.025rem;
+    $margin-h3: 0 0 1.2rem 0;
+    $letter-spacing-h3: .07rem;
 
     $font-color-h4: $color-text;
-    $font-size-h4: 1.1rem;
-    $font-weight-h4: 300;
+    $font-size-h4: 1.2rem;
     $line-height-h4: 1.2;
-    $margin-h4: 0 0 .7rem 0;
-    $letter-spacing-h4: -.025rem;
+    $margin-h4: 0 0 1rem 0;
+    $letter-spacing-h4: .05rem;
+
+    $font-color-h5: $color-text;
+    $font-size-h5: 1.1rem;
+    $line-height-h5: 1.2;
+    $margin-h5: 0 0 1rem 0;
+    $letter-spacing-h5: .05rem;
+
+    $font-color-h6: $color-text;
+    $font-size-h6: 1rem;
+    $line-height-h6: 1.2;
+    $margin-h6: 0 0 1rem 0;
+    $letter-spacing-h6: .05rem;
 
     // LINKS
     $link-color: $color-text;
@@ -52,15 +62,23 @@
     $code-color: $color-text;
     $code-background: $color-neutral-1;
     $code-padding: .3em;
-    $code-border: $color-neutral-2 1px solid;
-    $code-border-radius: $border-radius-default;
+    $code-border: #E2E2E2 1.5px solid;
 
     // HR
     $hr-height: 1px;
     $hr-color: $color-neutral-1;
     $hr-margin: 3rem 0;
 
-    // BLOCKQUOTE
+    // SUBTITLE
+    $font-size-sub2: 1.15rem;
+    $margin-bottom-sub2: 2.5rem;
+
+    $font-size-sub3: 1.05rem;
+    $margin-bottom-sub3: 2.5rem;
+
+    $font-size-sub4: 0.95rem;
+    $margin-bottom-sub4: 2.5rem;
+    
 
 
 // DEFAULT SPECIFICATIONS
@@ -71,6 +89,10 @@ body, .default {
     font-weight: $font-weight-default;
     line-height: $line-height-default;
     color: $font-color-default;
+}
+
+p {
+    margin-bottom: $margin-p;
 }
 
 a, .link {
@@ -87,7 +109,6 @@ code, .code {
     background: $code-background;
     padding: $code-padding;
     border: $code-border;
-    border-radius: $code-border-radius;
 }
 
 hr, .hr {
@@ -101,7 +122,6 @@ h1, .h1 {
     font-family: $font-2;
     color: $font-color-h1;
     font-size: $font-size-h1;
-    font-weight: $font-weight-h1;
     line-height: $line-height-h1;
     margin: $margin-h1;
     letter-spacing: $letter-spacing-h1;
@@ -111,7 +131,6 @@ h2, .h2 {
     font-family: $font-2;
     color: $font-color-h2;
     font-size: $font-size-h2;
-    font-weight: $font-weight-h2;
     line-height: $line-height-h2;
     margin: $margin-h2;
     letter-spacing: $letter-spacing-h2;
@@ -121,7 +140,6 @@ h3, .h3 {
     font-family: $font-2;
     color: $font-color-h3;
     font-size: $font-size-h3;
-    font-weight: $font-weight-h3;
     line-height: $line-height-h3;
     margin: $margin-h3;
     letter-spacing: $letter-spacing-h3;
@@ -131,8 +149,43 @@ h4, .h4 {
     font-family: $font-2;
     color: $font-color-h4;
     font-size: $font-size-h4;
-    font-weight: $font-weight-h4;
     line-height: $line-height-h4;
     margin: $margin-h4;
     letter-spacing: $letter-spacing-h4;
+}
+
+h5, .h5 {
+    font-family: $font-2;
+    color: $font-color-h5;
+    font-size: $font-size-h5;
+    line-height: $line-height-h5;
+    margin: $margin-h5;
+    letter-spacing: $letter-spacing-h5;
+}
+
+h6, .h6 {
+    font-family: $font-2;
+    color: $font-color-h6;
+    font-size: $font-size-h6;
+    line-height: $line-height-h6;
+    margin: $margin-h6;
+    letter-spacing: $letter-spacing-h6;
+}
+
+.sub2 {
+    font-style: italic;
+    font-size: $font-size-sub2;
+    margin-bottom: $margin-bottom-sub2;
+}
+
+.sub3 {
+    font-style: italic;
+    font-size: $font-size-sub3;
+    margin-bottom: $margin-bottom-sub3;
+}
+
+.sub4 {
+    font-style: italic;
+    font-size: $font-size-sub4;
+    margin-bottom: $margin-bottom-sub4;
 }
