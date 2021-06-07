@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="container grid">
+  <body class="container">
     <header class="main-header">
       <div class="text-center">
         <h2 class="main-header__title1">INTENSIV'</h2>
@@ -22,456 +22,483 @@
         ELEMENTS <span class="dBlock">REFERENCE</span>
       </h1>
 
-      <h2>COLORS</h2>
-      <div class="color-block color-1">#18BFEF</div>
-      <div class="color-block color-neutral-1">#E2E2E2</div>
-      <div class="color-block color-neutral-2">#717981</div>
-      <div class="color-block color-2">#4E403D</div>
-      <div class="color-block color-text">#212931</div>
+      <section>
+        <h2>COLORS</h2>
+        <div class="color-block color-1">#18BFEF</div>
+        <div class="color-block color-neutral-1">#E2E2E2</div>
+        <div class="color-block color-neutral-2">#717981</div>
+        <div class="color-block color-2">#4E403D</div>
+        <div class="color-block color-text">#212931</div>
+      </section>
 
       <hr />
 
-      <h2>
-        TEXT <span class="h5">- "MERRIWEATHER", GEORGIA, SERIF | #212931</span>
-      </h2>
-      <p>
-        This is <b>bold</b> and this is <strong>strong</strong>. This is
-        <i>italic</i> and this is <em>emphasized</em>. This is
-        <sup>superscript</sup> text and this is <sub>subscript</sub> text. This
-        is <u>underlined</u> and this is code: <code>for (;;) { ... }</code> .
-        Finally, this is a
-        <a href="#">link.</a>
-      </p>
+      <section>
+        <h2>
+          TEXT
+          <span class="h5">- "MERRIWEATHER", GEORGIA, SERIF | #212931</span>
+        </h2>
+        <p>
+          This is <b>bold</b> and this is <strong>strong</strong>. This is
+          <i>italic</i> and this is <em>emphasized</em>. This is
+          <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+          This is <u>underlined</u> and this is code:
+          <code>for (;;) { ... }</code> . Finally, this is a
+          <a href="#">link.</a>
+        </p>
+
+        <hr />
+
+        <h2>
+          HEADERS
+          <span class="h5"
+            >- "SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931</span
+          >
+        </h2>
+        <div>
+          <h1>HEADING LEVEL 1</h1>
+          <h2>HEADING LEVEL 2</h2>
+          <h3>HEADING LEVEL 3</h3>
+          <h4>HEADING LEVEL 4</h4>
+          <h5>HEADING LEVEL 5</h5>
+          <h6>HEADING LEVEL 6</h6>
+        </div>
+
+        <hr />
+
+        <h2>HEADING WITH A SUBITLE</h2>
+        <p class="sub2">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos ut pariatur laudantium. Iste maiores tempore provident
+          repellat culpa aliquam accusantium, qui id reprehenderit, illo
+          doloribus reiciendis deserunt. Eos, consectetur.
+        </p>
+
+        <h3>HEADING WITH A SUBITLE</h3>
+        <p class="sub3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos ut pariatur laudantium. Iste maiores tempore provident
+          repellat culpa aliquam accusantium, qui id reprehenderit, illo
+          doloribus reiciendis deserunt. Eos, consectetur.
+        </p>
+
+        <h4>HEADING WITH A SUBITLE</h4>
+        <p class="sub4">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos ut pariatur laudantium. Iste maiores tempore provident
+          repellat culpa aliquam accusantium, qui id reprehenderit, illo
+          doloribus reiciendis deserunt. Eos, consectetur.
+        </p>
+      </section>
 
       <hr />
 
-      <h2>
-        HEADERS
-        <span class="h5"
-          >- "SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931</span
-        >
-      </h2>
-      <div>
-        <h1>HEADING LEVEL 1</h1>
-        <h2>HEADING LEVEL 2</h2>
-        <h3>HEADING LEVEL 3</h3>
-        <h4>HEADING LEVEL 4</h4>
-        <h5>HEADING LEVEL 5</h5>
-        <h6>HEADING LEVEL 6</h6>
-      </div>
+      <section class="grid">
+        <h2>LISTS</h2>
+
+        <div class="col-m-6">
+          <h3>UNORDERED - UL</h3>
+          <ul>
+            <li>Dolor pulvinar etiam.</li>
+            <li>Sagittis lorem eleifend.</li>
+            <li>Felis feugiat dolore viverra.</li>
+            <li>Dolor pulvinar etiam.</li>
+          </ul>
+
+          <h3>UNORDERED - UL.ALTERNATE</h3>
+          <ul>
+            <li>Dolor pulvinar etiam etiam.</li>
+            <li>Sagittis adipiscing eleifend.</li>
+            <li>Felis enim dolore viverra</li>
+            <li>Dolor pulvinar etiam etiam.</li>
+          </ul>
+        </div>
+
+        <div class="col-m-6">
+          <h3>ORDERED</h3>
+          <ol>
+            <li>Dolor pulvinar etiam.</li>
+            <li>Etiam vel felis at viverra.</li>
+            <li>Felis enim feugiat magna.</li>
+            <li>Etiam vel felis nullam.</li>
+            <li>Felis enim et tempus.</li>
+          </ol>
+
+          <h3>ICONS</h3>
+          <ul class="icons">
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-github"></i></li>
+            <li><i class="fab fa-dribbble"></i></li>
+          </ul>
+          <ul class="icons">
+            <li><i class="fab fa-twitter alt text-center"></i></li>
+            <li><i class="fab fa-facebook-f alt text-center"></i></li>
+            <li><i class="fab fa-instagram alt text-center"></i></li>
+            <li><i class="fab fa-github alt text-center"></i></li>
+            <li><i class="fab fa-dribbble alt text-center"></i></li>
+          </ul>
+        </div>
+
+        <h3>DEFINITION</h3>
+        <dl>
+          <dt>Item 1</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            accusamus soluta sit saepe delectus recusandae ratione dolor
+            voluptatum id ipsam? A provident voluptate mollitia quidem.
+          </dd>
+          <dt>Item 2</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            accusamus soluta sit saepe delectus recusandae ratione dolor
+            voluptatum id ipsam? A provident voluptate mollitia quidem.
+          </dd>
+          <dt>Item 3</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            accusamus soluta sit saepe delectus recusandae ratione dolor
+            voluptatum id ipsam? A provident voluptate mollitia quidem.
+          </dd>
+        </dl>
+
+        <h3>ACTIONS</h3>
+
+        
+        <ul class="actionDemo stackedH">
+          <li><a href="#" class="button primary">PRIMARY</a></li>
+          <li><a href="#" class="button default">DEFAULT</a></li>
+        </ul>
+        <ul class="actionDemo stackedH">
+          <li><a href="#" class="button primary small">SMALL</a></li>
+          <li><a href="#" class="button default small">SMALL</a></li>
+        </ul>
+        <ul class="col-m-6 actionDemo stackedV">
+          <li class="dBlock"><a href="#" class="button primary">DEFAULT</a></li>
+          <li class="dBlock"><a href="#" class="button default">DEFAULT</a></li>
+        </ul>
+        <ul class="col-m-6 actionDemo stackedV">
+          <li class="dBlock"><a href="#" class="button primary small">SMALL</a></li>
+          <li class="dBlock"><a href="#" class="button default small">SMALL</a></li>
+        </ul>
+
+        <ul class="col-m-6 actionDemo stackedV">
+          <li class="dBlock"><a href="#" class="button primary fit">DEFAULT</a></li>
+          <li class="dBlock"><a href="#" class="button default fit">DEFAULT</a></li>
+        </ul>
+        <ul class="col-m-6 actionDemo stackedV">
+          <li class="dBlock"><a href="#" class="button primary fit small">SMALL</a></li>
+          <li class="dBlock"><a href="#" class="button default fit small">SMALL</a></li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <h3>Blockquote</h3>
+        <blockquote>
+          Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
+          sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus
+          vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing
+          accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
+          ipsum dolor sit amet nullam adipiscing eu felis.
+        </blockquote>
+      </section>
 
       <hr />
 
-      <h2>HEADING WITH A SUBITLE</h2>
-      <p class="sub2"
-        >Lorem ipsum dolor, sit amet consectetur adipisicing elit</p
-      >
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        dignissimos ut pariatur laudantium. Iste maiores tempore provident
-        repellat culpa aliquam accusantium, qui id reprehenderit, illo doloribus
-        reiciendis deserunt. Eos, consectetur.
-      </p>
+      <section>
+        <h2>Table</h2>
 
-      <h3>HEADING WITH A SUBITLE</h3>
-      <p class="sub3"
-        >Lorem ipsum dolor, sit amet consectetur adipisicing elit</p
-      >
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        dignissimos ut pariatur laudantium. Iste maiores tempore provident
-        repellat culpa aliquam accusantium, qui id reprehenderit, illo doloribus
-        reiciendis deserunt. Eos, consectetur.
-      </p>
+        <h3>Default</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Item One</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item Two</td>
+              <td>Vis ac commodo adipiscing arcu aliquet.</td>
+              <td>19.99</td>
+            </tr>
+            <tr>
+              <td>Item Three</td>
+              <td>Morbi faucibus arcu accumsam lorem.</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item Four</td>
+              <td>Vitae integer tempus condimentum.</td>
+              <td>19.99</td>
+            </tr>
+            <tr>
+              <td>Item Five</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2"></td>
+              <td>100.00</td>
+            </tr>
+          </tfoot>
+        </table>
 
-      <h4>HEADING WITH A SUBITLE</h4>
-      <p class="sub4"
-        >Lorem ipsum dolor, sit amet consectetur adipisicing elit</p
-      >
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        dignissimos ut pariatur laudantium. Iste maiores tempore provident
-        repellat culpa aliquam accusantium, qui id reprehenderit, illo doloribus
-        reiciendis deserunt. Eos, consectetur.
-      </p>
-
-      <hr />
-
-      <h2>Lists</h2>
-
-      <h3>Unordered - UL</h3>
-      <ul>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-      </ul>
-
-      <h3>Unordered - UL.alternate</h3>
-      <ul>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-      </ul>
-
-      <h3>Ordered</h3>
-      <ol>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-      </ol>
-
-      <h3>Icons</h3>
-      <ul>
-        <li><i class="fab fa-twitter"></i></li>
-        <li><i class="fab fa-facebook-f"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
-        <li><i class="fab fa-github"></i></li>
-        <li><i class="fab fa-dribbble"></i></li>
-      </ul>
-      <ul>
-        <li><i class="fab fa-twitter"></i></li>
-        <li><i class="fab fa-facebook-f"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
-        <li><i class="fab fa-github"></i></li>
-        <li><i class="fab fa-dribbble"></i></li>
-      </ul>
-
-      <h3>Definition</h3>
-      <dl>
-        <dt>Item 1</dt>
-        <dd>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-          accusamus soluta sit saepe delectus recusandae ratione dolor
-          voluptatum id ipsam? A provident voluptate mollitia quidem.
-        </dd>
-        <dt>Item 2</dt>
-        <dd>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-          accusamus soluta sit saepe delectus recusandae ratione dolor
-          voluptatum id ipsam? A provident voluptate mollitia quidem.
-        </dd>
-        <dt>Item 3</dt>
-        <dd>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-          accusamus soluta sit saepe delectus recusandae ratione dolor
-          voluptatum id ipsam? A provident voluptate mollitia quidem.
-        </dd>
-      </dl>
-
-      <h3>Actions</h3>
-
-      <ul>
-        <li><a href="#">Primary</a></li>
-        <li><a href="#">Default</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Small</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Default</a></li>
-        <li><a href="#">Default</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Default</a></li>
-        <li><a href="#">Default</a></li>
-      </ul>
-
-      <ul>
-        <li><a href="#">Small</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Small</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
-
-      <hr />
-
-      <h3>Blockquote</h3>
-      <blockquote>
-        Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
-        sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus
-        vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing
-        accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum
-        dolor sit amet nullam adipiscing eu felis.
-      </blockquote>
-
-      <hr />
-
-      <h2>Table</h2>
-
-      <h3>Default</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Item One</td>
-            <td>Ante turpis integer aliquet porttitor.</td>
-            <td>29.99</td>
-          </tr>
-          <tr>
-            <td>Item Two</td>
-            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-            <td>19.99</td>
-          </tr>
-          <tr>
-            <td>Item Three</td>
-            <td>Morbi faucibus arcu accumsam lorem.</td>
-            <td>29.99</td>
-          </tr>
-          <tr>
-            <td>Item Four</td>
-            <td>Vitae integer tempus condimentum.</td>
-            <td>19.99</td>
-          </tr>
-          <tr>
-            <td>Item Five</td>
-            <td>Ante turpis integer aliquet porttitor.</td>
-            <td>29.99</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2"></td>
-            <td>100.00</td>
-          </tr>
-        </tfoot>
-      </table>
-
-      <h3>Alternate</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Item One</td>
-            <td>Ante turpis integer aliquet porttitor.</td>
-            <td>29.99</td>
-          </tr>
-          <tr>
-            <td>Item Two</td>
-            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-            <td>19.99</td>
-          </tr>
-          <tr>
-            <td>Item Three</td>
-            <td>Morbi faucibus arcu accumsam lorem.</td>
-            <td>29.99</td>
-          </tr>
-          <tr>
-            <td>Item Four</td>
-            <td>Vitae integer tempus condimentum.</td>
-            <td>19.99</td>
-          </tr>
-          <tr>
-            <td>Item Five</td>
-            <td>Ante turpis integer aliquet porttitor.</td>
-            <td>29.99</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2"></td>
-            <td>100.00</td>
-          </tr>
-        </tfoot>
-      </table>
+        <h3>Alternate</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Item One</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item Two</td>
+              <td>Vis ac commodo adipiscing arcu aliquet.</td>
+              <td>19.99</td>
+            </tr>
+            <tr>
+              <td>Item Three</td>
+              <td>Morbi faucibus arcu accumsam lorem.</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item Four</td>
+              <td>Vitae integer tempus condimentum.</td>
+              <td>19.99</td>
+            </tr>
+            <tr>
+              <td>Item Five</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2"></td>
+              <td>100.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
 
       <hr />
 
       <h2>Buttons</h2>
 
-      <ul>
-        <li><a href="#">Primary</a></li>
-        <li><a href="#">Default</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Large</a></li>
-        <li><a href="#">Default</a></li>
-        <li><a href="#">Small</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Fit</a></li>
-        <li><a href="#">Fit + Small</a></li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#"><i class="fas fa-search"></i>Icon</a>
-        </li>
-        <li>
-          <a href="#"><i class="fas fa-download"></i>Icon</a>
-        </li>
-      </ul>
-      <ul>
-        <li><a href="#">Primary</a></li>
-        <li><a href="#">Default</a></li>
-      </ul>
-
-      <ul>
-        <li><a href="#">Fit</a></li>
-        <li><a href="#">Fit + Small</a></li>
-      </ul>
-
-      <hr />
-
-      <h2>Form</h2>
-
-      <form method="post" action="#">
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <select name="category" id="category">
-          <option value>- Category -</option>
-          <option value="1">Manufacturing</option>
-          <option value="2">Shipping</option>
-          <option value="3">Administration</option>
-          <option value="4">Human Resources</option>
-        </select>
-        <input type="radio" id="radio-low" name="priority" checked />
-        <label for="radio-low">Low</label>
-        <input type="radio" id="radio-normal" name="priority" />
-        <label for="radio-normal">Normal</label>
-        <input type="radio" id="radio-high" name="priority" />
-        <label for="radio-high">High</label>
-        <input type="checkbox" id="copy" />
-        <label for="copy">Email me a copy</label>
-        <input type="checkbox" id="human" />
-        <label for="human">I am a human</label>
-        <textarea
-          name="message"
-          id="message"
-          rows="6"
-          placeholder="Enter your message"
-        ></textarea>
+      <section>
+        <ul>
+          <li><a href="#">Primary</a></li>
+          <li><a href="#">Default</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Default</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Fit</a></li>
+          <li><a href="#">Fit + Small</a></li>
+        </ul>
         <ul>
           <li>
-            <input type="submit" value="Send Message" />
+            <a href="#"><i class="fas fa-search"></i>Icon</a>
           </li>
           <li>
-            <input type="reset" value="Reset" />
+            <a href="#"><i class="fas fa-download"></i>Icon</a>
           </li>
         </ul>
-      </form>
+        <ul>
+          <li><a href="#">Primary</a></li>
+          <li><a href="#">Default</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">Fit</a></li>
+          <li><a href="#">Fit + Small</a></li>
+        </ul>
+      </section>
 
       <hr />
 
-      <h2>Image</h2>
+      <section>
+        <h2>Form</h2>
 
-      <h3>Fit</h3>
-
-      <img src="./assets/images/pic04.jpg" alt="" />
-
-      <img src="./assets/images/pic01.jpg" alt="" />
-      <img src="./assets/images/pic02.jpg" alt="" />
-      <img src="./assets/images/pic03.jpg" alt="" />
-      <img src="./assets/images/pic03.jpg" alt="" />
-      <img src="./assets/images/pic01.jpg" alt="" />
-      <img src="./assets/images/pic02.jpg" alt="" />
-      <img src="./assets/images/pic02.jpg" alt="" />
-      <img src="./assets/images/pic03.jpg" alt="" />
-      <img src="./assets/images/pic01.jpg" alt="" />
-
-      <h3>Left & Right</h3>
-
-      <img src="./assets/images/pic05.jpg" alt="" />
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit
-        at adipisci quas facere illo suscipit esse omnis, perferendis nam
-        similique magni soluta ullam voluptates nulla, vel deleniti? Aspernatur
-        dolorum consequuntur aut dolor provident, suscipit, nemo eius, unde
-        architecto inventore voluptas praesentium optio quos libero similique
-        sunt veritatis odio fugiat tenetur alias corrupti iusto modi amet?
-        Voluptatem odit et maiores hic delectus, dicta deleniti dolores esse,
-        quo veritatis praesentium corrupti exercitationem a aut unde expedita
-        quia provident facere dolor modi quasi. Commodi blanditiis rem delectus
-        officia assumenda corrupti similique esse, molestias dignissimos
-        accusamus nobis pariatur enim quas laboriosam voluptate, earum ducimus.
-        Error, odit? Consequatur incidunt magnam quibusdam laudantium animi
-        accusantium sit officiis! Dolor facilis quaerat dignissimos vero iste?
-        Itaque et odit totam, ducimus nesciunt quo repudiandae aspernatur fugit
-        repellendus animi, magnam quas illum rerum quia libero! Porro numquam
-        inventore ipsam molestias fugiat sunt quae facilis officia nostrum.
-        Neque distinctio soluta libero illum debitis corrupti. Aut, aspernatur
-        soluta ab ullam sed, exercitationem optio impedit id ipsa quibusdam esse
-        assumenda debitis sapiente odit fugiat perferendis quisquam nobis
-        eligendi similique voluptate. Blanditiis eveniet, illo, sequi quos quis
-        beatae nostrum cupiditate, porro asperiores officia voluptas doloremque
-        rem aut? Voluptas possimus incidunt vitae consequatur reiciendis harum?
-      </p>
-
-      <img src="./assets/images/pic06.jpg" alt="" />
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam incidunt
-        non, inventore officia quo voluptatum possimus. Impedit reprehenderit
-        asperiores, error, fuga facilis corporis ad magni aperiam sint laborum,
-        explicabo assumenda veniam aut? Perferendis molestiae aperiam hic,
-        laudantium autem harum ipsa sed nam. Sunt velit veritatis voluptatibus
-        tempora quasi, voluptate saepe eum nulla vitae, facilis error
-        repellendus dolore omnis, quo sapiente odit dolorum ducimus asperiores
-        dignissimos necessitatibus voluptatem obcaecati. Eum dicta dolores
-        quaerat! Quisquam distinctio iste id dolorum repellat vel obcaecati
-        dolor deleniti eum cumque libero quia aperiam est a delectus debitis
-        modi, fuga facere vero rem illum in eligendi accusamus. Hic, commodi
-        atque? Eius quis, expedita quo consequatur autem, adipisci excepturi
-        voluptatibus, sunt dicta repellendus magnam? Dolorem assumenda quidem
-        suscipit fuga iusto doloremque, quae voluptate quos vitae quod ab eum
-        aut et beatae vero facilis laboriosam voluptas esse accusamus nisi dolor
-        earum harum quam. Consectetur eum tenetur odio quas corrupti,
-        praesentium unde dolores nam asperiores deleniti distinctio quo,
-        quisquam vitae quia nemo, modi ipsa iste corporis. Iure sint natus illo,
-        quidem praesentium eaque rerum exercitationem ipsum, accusamus enim
-        inventore perspiciatis ea optio dolorum doloremque quod, illum esse
-        assumenda hic ipsam quis minus sapiente? Delectus quibusdam voluptatibus
-        accusamus corrupti. Reiciendis, expedita!
-      </p>
+        <form method="post" action="#">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <select name="category" id="category">
+            <option value>- Category -</option>
+            <option value="1">Manufacturing</option>
+            <option value="2">Shipping</option>
+            <option value="3">Administration</option>
+            <option value="4">Human Resources</option>
+          </select>
+          <input type="radio" id="radio-low" name="priority" checked />
+          <label for="radio-low">Low</label>
+          <input type="radio" id="radio-normal" name="priority" />
+          <label for="radio-normal">Normal</label>
+          <input type="radio" id="radio-high" name="priority" />
+          <label for="radio-high">High</label>
+          <input type="checkbox" id="copy" />
+          <label for="copy">Email me a copy</label>
+          <input type="checkbox" id="human" />
+          <label for="human">I am a human</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="6"
+            placeholder="Enter your message"
+          ></textarea>
+          <ul>
+            <li>
+              <input type="submit" value="Send Message" />
+            </li>
+            <li>
+              <input type="reset" value="Reset" />
+            </li>
+          </ul>
+        </form>
+      </section>
 
       <hr />
 
-      <h2>Box</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-        tempora distinctio dicta nisi officia hic odit, velit, ad ipsum voluptas
-        inventore. Obcaecati repellendus at, veritatis, error dolor et pariatur
-        illum nulla architecto commodi eos necessitatibus omnis porro placeat
-        possimus. Et non ipsam reprehenderit, assumenda tempora laudantium neque
-        libero, sit id ad perferendis deserunt dicta corrupti quod doloribus
-        dolorem nobis reiciendis ipsum explicabo quisquam omnis laboriosam vero
-        culpa! Provident corporis suscipit illo sint ab alias magni optio
-        voluptas doloribus minus repudiandae recusandae nostrum facilis culpa
-        minima, itaque totam est voluptates modi fugit quis! Necessitatibus,
-        quibusdam quas fugiat et iusto illo velit optio laboriosam aliquid nemo,
-        at reiciendis labore. Voluptates sed unde fuga sapiente consequuntur
-        aliquam. Ipsa est saepe dolores soluta corrupti, unde sed magni
-        consectetur nostrum eos, natus quam cum tempora dolore laudantium nulla
-        doloribus corporis facere dolorum earum similique ullam aliquid sunt!
-        Voluptate, aspernatur quo. Unde aliquid dicta asperiores nostrum eveniet
-        vitae eos blanditiis, alias cumque, eligendi necessitatibus id vero iste
-        repellendus praesentium reiciendis debitis dolore quidem sint
-        voluptates. Porro eum sit, placeat voluptatibus accusamus et
-        perspiciatis quo vel ullam aperiam dolorum molestias doloremque quasi!
-        Expedita quia eum nam doloribus explicabo magni quam aspernatur atque.
-        Minus, exercitationem voluptates. Enim, necessitatibus!
-      </p>
+      <section>
+        <h2>Image</h2>
+
+        <h3>Fit</h3>
+
+        <img src="./assets/images/pic04.jpg" alt="" />
+
+        <img src="./assets/images/pic01.jpg" alt="" />
+        <img src="./assets/images/pic02.jpg" alt="" />
+        <img src="./assets/images/pic03.jpg" alt="" />
+        <img src="./assets/images/pic03.jpg" alt="" />
+        <img src="./assets/images/pic01.jpg" alt="" />
+        <img src="./assets/images/pic02.jpg" alt="" />
+        <img src="./assets/images/pic02.jpg" alt="" />
+        <img src="./assets/images/pic03.jpg" alt="" />
+        <img src="./assets/images/pic01.jpg" alt="" />
+
+        <h3>Left & Right</h3>
+
+        <img src="./assets/images/pic05.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Reprehenderit at adipisci quas facere illo suscipit esse omnis,
+          perferendis nam similique magni soluta ullam voluptates nulla, vel
+          deleniti? Aspernatur dolorum consequuntur aut dolor provident,
+          suscipit, nemo eius, unde architecto inventore voluptas praesentium
+          optio quos libero similique sunt veritatis odio fugiat tenetur alias
+          corrupti iusto modi amet? Voluptatem odit et maiores hic delectus,
+          dicta deleniti dolores esse, quo veritatis praesentium corrupti
+          exercitationem a aut unde expedita quia provident facere dolor modi
+          quasi. Commodi blanditiis rem delectus officia assumenda corrupti
+          similique esse, molestias dignissimos accusamus nobis pariatur enim
+          quas laboriosam voluptate, earum ducimus. Error, odit? Consequatur
+          incidunt magnam quibusdam laudantium animi accusantium sit officiis!
+          Dolor facilis quaerat dignissimos vero iste? Itaque et odit totam,
+          ducimus nesciunt quo repudiandae aspernatur fugit repellendus animi,
+          magnam quas illum rerum quia libero! Porro numquam inventore ipsam
+          molestias fugiat sunt quae facilis officia nostrum. Neque distinctio
+          soluta libero illum debitis corrupti. Aut, aspernatur soluta ab ullam
+          sed, exercitationem optio impedit id ipsa quibusdam esse assumenda
+          debitis sapiente odit fugiat perferendis quisquam nobis eligendi
+          similique voluptate. Blanditiis eveniet, illo, sequi quos quis beatae
+          nostrum cupiditate, porro asperiores officia voluptas doloremque rem
+          aut? Voluptas possimus incidunt vitae consequatur reiciendis harum?
+        </p>
+
+        <img src="./assets/images/pic06.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+          incidunt non, inventore officia quo voluptatum possimus. Impedit
+          reprehenderit asperiores, error, fuga facilis corporis ad magni
+          aperiam sint laborum, explicabo assumenda veniam aut? Perferendis
+          molestiae aperiam hic, laudantium autem harum ipsa sed nam. Sunt velit
+          veritatis voluptatibus tempora quasi, voluptate saepe eum nulla vitae,
+          facilis error repellendus dolore omnis, quo sapiente odit dolorum
+          ducimus asperiores dignissimos necessitatibus voluptatem obcaecati.
+          Eum dicta dolores quaerat! Quisquam distinctio iste id dolorum
+          repellat vel obcaecati dolor deleniti eum cumque libero quia aperiam
+          est a delectus debitis modi, fuga facere vero rem illum in eligendi
+          accusamus. Hic, commodi atque? Eius quis, expedita quo consequatur
+          autem, adipisci excepturi voluptatibus, sunt dicta repellendus magnam?
+          Dolorem assumenda quidem suscipit fuga iusto doloremque, quae
+          voluptate quos vitae quod ab eum aut et beatae vero facilis laboriosam
+          voluptas esse accusamus nisi dolor earum harum quam. Consectetur eum
+          tenetur odio quas corrupti, praesentium unde dolores nam asperiores
+          deleniti distinctio quo, quisquam vitae quia nemo, modi ipsa iste
+          corporis. Iure sint natus illo, quidem praesentium eaque rerum
+          exercitationem ipsum, accusamus enim inventore perspiciatis ea optio
+          dolorum doloremque quod, illum esse assumenda hic ipsam quis minus
+          sapiente? Delectus quibusdam voluptatibus accusamus corrupti.
+          Reiciendis, expedita!
+        </p>
+      </section>
 
       <hr />
 
-      <h2>Preformatted</h2>
-      <pre>
+      <section>
+        <h2>Box</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          tempora distinctio dicta nisi officia hic odit, velit, ad ipsum
+          voluptas inventore. Obcaecati repellendus at, veritatis, error dolor
+          et pariatur illum nulla architecto commodi eos necessitatibus omnis
+          porro placeat possimus. Et non ipsam reprehenderit, assumenda tempora
+          laudantium neque libero, sit id ad perferendis deserunt dicta corrupti
+          quod doloribus dolorem nobis reiciendis ipsum explicabo quisquam omnis
+          laboriosam vero culpa! Provident corporis suscipit illo sint ab alias
+          magni optio voluptas doloribus minus repudiandae recusandae nostrum
+          facilis culpa minima, itaque totam est voluptates modi fugit quis!
+          Necessitatibus, quibusdam quas fugiat et iusto illo velit optio
+          laboriosam aliquid nemo, at reiciendis labore. Voluptates sed unde
+          fuga sapiente consequuntur aliquam. Ipsa est saepe dolores soluta
+          corrupti, unde sed magni consectetur nostrum eos, natus quam cum
+          tempora dolore laudantium nulla doloribus corporis facere dolorum
+          earum similique ullam aliquid sunt! Voluptate, aspernatur quo. Unde
+          aliquid dicta asperiores nostrum eveniet vitae eos blanditiis, alias
+          cumque, eligendi necessitatibus id vero iste repellendus praesentium
+          reiciendis debitis dolore quidem sint voluptates. Porro eum sit,
+          placeat voluptatibus accusamus et perspiciatis quo vel ullam aperiam
+          dolorum molestias doloremque quasi! Expedita quia eum nam doloribus
+          explicabo magni quam aspernatur atque. Minus, exercitationem
+          voluptates. Enim, necessitatibus!
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Preformatted</h2>
+        <pre>
                 i = 0;
 
                 while (!deck.isInOrder()) {
@@ -482,7 +509,8 @@
 
                 print 'It took ' + i + ' iterations to sort the deck.';
             </pre
-      >
+        >
+      </section>
     </main>
     <footer class="main-footer">
       <div>...</div>

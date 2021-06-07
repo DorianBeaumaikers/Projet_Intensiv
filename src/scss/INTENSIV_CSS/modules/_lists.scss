@@ -1,0 +1,83 @@
+// LISTS VARIABLES
+
+    // UL
+    $padding-ul: 1rem 0 1rem 1rem;
+
+    // OL
+    $padding-ol: 1rem 0 1rem 1rem;
+
+    // LI
+    $margin-bottom-li: 0.8rem;
+    $padding-left-li: 0.5rem;
+
+    // ICONS
+    $padding-icons: 0;
+    $display-icons-li: inline-block;
+    $padding-icons-li: 0;
+    $margin-icons-li: 0 0.5rem;
+    $padding-icons-i: 0.5rem;
+    $font-size-icons-i: 1.15rem;
+    $padding-icons-alt: 0;
+    $font-size-icons-alt: 1rem;
+    $width-icons-alt: 2em;
+    $line-height-icons-alt: 1.95rem;
+    $border-icons-alt: solid 1px $color-neutral-2;
+    $border-radius-icons-alt: 100%;
+
+    // DEFINITION
+    $margin-top-dl: 0;
+    $font-weight-dt: 900;
+    $margin-top-dd: 1rem;
+    $margin-bottom-dd: 2rem;
+    $line-height-dd: 2.5rem;
+
+
+// CLASSES
+
+ul {
+    padding: $padding-ul;
+}
+
+ol {
+    padding: $padding-ol;
+}
+
+li {
+    margin-bottom: $margin-bottom-li;
+    padding-left: $padding-left-li;
+}
+
+.icons {
+    padding: $padding-icons;
+    li {
+        display: $display-icons-li;
+        padding: $padding-icons-li;
+        margin: $margin-icons-li;
+        i {
+            padding: $padding-icons-i;
+            font-size: $font-size-icons-i;
+        }
+        .alt {
+            padding: $padding-icons-alt;
+            font-size: $font-size-icons-alt;
+            width: $width-icons-alt;
+            line-height: $line-height-icons-alt;
+            border: $border-icons-alt;
+            border-radius: $border-radius-icons-alt;
+        }
+    }
+}
+
+dl {
+    margin-top: $margin-top-dl;
+}
+
+dt {
+    font-weight: $font-weight-dt;
+}
+
+dd {
+    margin-top: $margin-top-dd;
+    margin-bottom: $margin-bottom-dd;
+    line-height: $line-height-dd;
+}

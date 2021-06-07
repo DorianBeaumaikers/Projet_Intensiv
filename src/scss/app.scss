@@ -26,6 +26,34 @@ body {
 .main-content {
     background: #fff;
     padding: 7rem;
+    .actionDemo {
+        margin: 0 0 2em 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin: 0;
+            &.dBlock {
+                display: block;
+            }
+            
+        }
+    }
+    .stackedH {
+        li {
+            padding: 0 0 0 1rem;
+        }
+        li:first-child {
+            padding: 0;
+        }
+    }
+    .stackedV {
+        li {
+            padding: 1rem 0 0 0;
+        }
+        li:first-child {
+            padding: 0;
+        }
+    }
 }
 
 // ------------------------------

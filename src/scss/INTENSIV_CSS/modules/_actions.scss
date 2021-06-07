@@ -1,0 +1,54 @@
+// ACTIONS VARIABLES
+
+    //BUTTONS
+
+
+    //PRIMARY
+    
+
+    //DEFAULT
+
+
+    //SMALL
+
+    //MEDIUM
+
+    //LARGE
+
+// CLASSES
+
+.button {
+    display: inline-block;
+    font-family: $font-2;
+    text-decoration: none;
+    font-size: 1rem;
+    border: solid 3px $color-text;
+    min-width: 9em;
+    line-height: 3em;
+    text-align: center;
+}
+
+.primary {
+    background-color: $color-text;
+    color: $color-neutral-1;
+    &:hover {
+        color: $color-neutral-1;
+    }
+}
+
+.default {
+    color: $color-text;
+
+    &:hover {
+        color: $color-text;
+    }
+}
+
+.small {
+    font-size: 0.8rem;
+    min-width: 8em;
+}
+
+.fit {
+    width: 100%;
+}
