@@ -5,8 +5,8 @@
 
 // VARIABLES MODULE GRID
 
-$gapH: 1em; // Goutière Horizontale
-$gapV: 0; // Goutière verticale
+$gapH: 2em; // Goutière Horizontale
+$gapV: 2em; // Goutière verticale
 
 // GRID SYSTEM 12 colonnes
 .grid {
@@ -14,7 +14,7 @@ $gapV: 0; // Goutière verticale
     grid-template-columns: repeat(12, 1fr);
     gap: $gapV $gapH;
     &.grid-no-gap {
-        gap: 0 0;
+        gap: 0 2em;
     }
     > * {
         grid-column: span 12;
