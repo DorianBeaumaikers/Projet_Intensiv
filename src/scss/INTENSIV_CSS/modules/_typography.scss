@@ -62,7 +62,7 @@
     $code-color: $color-text;
     $code-background: $color-neutral-1;
     $code-padding: .3em;
-    $code-border: #E2E2E2 1.5px solid;
+    $code-border: 1.5px solid $color-neutral-3;
 
     // HR
     $hr-height: 1px;
@@ -109,6 +109,15 @@ code, .code {
     background: $code-background;
     padding: $code-padding;
     border: $code-border;
+}
+
+blockquote, .blockquote {
+    margin-left: 0;
+    padding: 0.7rem 0 0.7rem 2rem;
+    border-left: solid 5px $color-neutral-1;
+    line-height: 2.5rem;
+    font-style: italic;
+    font-size: 1rem;
 }
 
 hr, .hr {

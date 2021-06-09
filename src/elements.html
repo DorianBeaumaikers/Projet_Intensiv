@@ -204,7 +204,7 @@
       <hr />
 
       <section>
-        <h3>Blockquote</h3>
+        <h3>BLOCKQUOTE</h3>
         <blockquote>
           Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
           sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus
@@ -217,40 +217,40 @@
       <hr />
 
       <section>
-        <h2>Table</h2>
+        <h2>TABLE</h2>
 
-        <h3>Default</h3>
+        <h3>DEFAULT</h3>
         <table>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Price</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+              <th>PRICE</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Item One</td>
+              <td>Item 1</td>
               <td>Ante turpis integer aliquet porttitor.</td>
               <td>29.99</td>
             </tr>
             <tr>
-              <td>Item Two</td>
+              <td>Item 2</td>
               <td>Vis ac commodo adipiscing arcu aliquet.</td>
               <td>19.99</td>
             </tr>
             <tr>
-              <td>Item Three</td>
+              <td>Item 3</td>
               <td>Morbi faucibus arcu accumsam lorem.</td>
               <td>29.99</td>
             </tr>
             <tr>
-              <td>Item Four</td>
+              <td>Item 4</td>
               <td>Vitae integer tempus condimentum.</td>
               <td>19.99</td>
             </tr>
             <tr>
-              <td>Item Five</td>
+              <td>Item 5</td>
               <td>Ante turpis integer aliquet porttitor.</td>
               <td>29.99</td>
             </tr>
@@ -263,38 +263,38 @@
           </tfoot>
         </table>
 
-        <h3>Alternate</h3>
-        <table>
+        <h3>ALTERNATE</h3>
+        <table class="alt">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Price</th>
+              <th>NAME</th>
+              <th>DESCRIPTION</th>
+              <th>PRICE</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Item One</td>
+              <td>Item 1</td>
               <td>Ante turpis integer aliquet porttitor.</td>
               <td>29.99</td>
             </tr>
             <tr>
-              <td>Item Two</td>
+              <td>Item 2</td>
               <td>Vis ac commodo adipiscing arcu aliquet.</td>
               <td>19.99</td>
             </tr>
             <tr>
-              <td>Item Three</td>
+              <td>Item 3</td>
               <td>Morbi faucibus arcu accumsam lorem.</td>
               <td>29.99</td>
             </tr>
             <tr>
-              <td>Item Four</td>
+              <td>Item 4</td>
               <td>Vitae integer tempus condimentum.</td>
               <td>19.99</td>
             </tr>
             <tr>
-              <td>Item Five</td>
+              <td>Item 5</td>
               <td>Ante turpis integer aliquet porttitor.</td>
               <td>29.99</td>
             </tr>
@@ -310,49 +310,49 @@
 
       <hr />
 
-      <h2>Buttons</h2>
+      <h2>BUTTONS</h2>
 
-      <section>
-        <ul>
-          <li><a href="#">Primary</a></li>
-          <li><a href="#">Default</a></li>
+      <section class="grid">
+        <ul class="actionDemo stackedH">
+          <li><a href="#" class="button primary">PRIMARY</a></li>
+          <li><a href="#" class="button default">DEFAULT</a></li>
         </ul>
-        <ul>
-          <li><a href="#">Large</a></li>
-          <li><a href="#">Default</a></li>
-          <li><a href="#">Small</a></li>
+        <ul class="actionDemo stackedH">
+          <li><a href="#" class="button primary large">LARGE</a></li>
+          <li><a href="#" class="button default">DEFAULT</a></li>
+          <li><a href="#" class="button default small">SMALL</a></li>
         </ul>
-        <ul>
-          <li><a href="#">Fit</a></li>
-          <li><a href="#">Fit + Small</a></li>
+        <ul class="actionDemo stackedH grid">
+          <li class="col-xs-6"><a href="#" class="button primary fit">FIT</a></li>
+          <li class="col-xs-6"><a href="#" class="button default fit">FIT</a></li>
         </ul>
-        <ul>
+        <ul class="actionDemo stackedH grid">
+          <li class="col-xs-6"><a href="#" class="button primary fit small">FIT + SMALL</a></li>
+          <li class="col-xs-6"><a href="#" class="button default fit small">FIT + SMALL</a></li>
+        </ul>
+        <ul class="actionDemo stackedH">
           <li>
-            <a href="#"><i class="fas fa-search"></i>Icon</a>
+            <a href="#" class="button primary"><i class="fas fa-search"></i>ICON</a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-download"></i>Icon</a>
+            <a href="#" class="button default"><i class="fas fa-download"></i>ICON</a>
           </li>
         </ul>
-        <ul>
-          <li><a href="#">Primary</a></li>
-          <li><a href="#">Default</a></li>
+        <ul class="actionDemo stackedH">
+          <li><a href="#" class="button primary disabled">PRIMARY</a></li>
+          <li><a href="#" class="button default disabled">DEFAULT</a></li>
         </ul>
 
-        <ul>
-          <li><a href="#">Fit</a></li>
-          <li><a href="#">Fit + Small</a></li>
-        </ul>
       </section>
 
       <hr />
 
       <section>
-        <h2>Form</h2>
+        <h2>FORM</h2>
 
-        <form method="post" action="#">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
+        <form method="post" action="#" class="grid">
+          <input type="text" placeholder="Name" class="col-xs-6" />
+          <input type="email" placeholder="Email" class="col-xs-6" />
           <select name="category" id="category">
             <option value>- Category -</option>
             <option value="1">Manufacturing</option>
@@ -360,28 +360,38 @@
             <option value="3">Administration</option>
             <option value="4">Human Resources</option>
           </select>
-          <input type="radio" id="radio-low" name="priority" checked />
-          <label for="radio-low">Low</label>
-          <input type="radio" id="radio-normal" name="priority" />
-          <label for="radio-normal">Normal</label>
-          <input type="radio" id="radio-high" name="priority" />
-          <label for="radio-high">High</label>
-          <input type="checkbox" id="copy" />
-          <label for="copy">Email me a copy</label>
-          <input type="checkbox" id="human" />
-          <label for="human">I am a human</label>
+          <div class="col-m-4">
+            <input type="radio" id="radio-low" name="priority" checked />
+            <label for="radio-low">Low</label>
+          </div>
+          <div class="col-m-4">
+            <input type="radio" id="radio-normal" name="priority" />
+            <label for="radio-normal">Normal</label>
+          </div>
+          <div class="col-m-4">
+            <input type="radio" id="radio-high" name="priority" />
+            <label for="radio-high">High</label>
+          </div>
+          <div class="col-m-6">
+            <input type="checkbox" id="copy" />
+            <label for="copy">Email me a copy</label>
+          </div>
+          <div class="col-m-6">
+            <input type="checkbox" id="human" />
+            <label for="human">I am a human</label>
+          </div>
           <textarea
             name="message"
             id="message"
             rows="6"
             placeholder="Enter your message"
           ></textarea>
-          <ul>
+          <ul class="actionDemo stackedH">
             <li>
-              <input type="submit" value="Send Message" />
+              <input type="submit" value="SEND MESSAGE" class="button primary"/>
             </li>
             <li>
-              <input type="reset" value="Reset" />
+              <input type="reset" value="RESET" class="button default"/>
             </li>
           </ul>
         </form>

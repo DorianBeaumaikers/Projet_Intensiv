@@ -1,0 +1,54 @@
+// TABLES VARIABLES
+
+
+
+
+
+// CLASSES
+
+table {
+ margin: 0 0 2rem 0;
+ width: 100%;
+ border-collapse: collapse;
+ border-spacing: 0;
+ &.alt {
+     border-collapse: separate;
+     tbody {
+         tr {
+             td {
+                 border: solid 1px $color-neutral-3;
+             }
+         }
+     }
+ }
+}
+
+thead {
+    font-family: $font-2;
+    font-size: 1rem;
+    border-bottom: solid 2px $color-neutral-3;
+}
+
+tbody {
+    tr:nth-child(2n+1) {
+        background-color: $color-neutral-1;
+    }
+    tr {
+        border: solid 1px $color-neutral-3;
+        border-left: 0;
+        border-right: 0;
+    }
+}
+
+tfoot {
+    border-top: solid 2px $color-neutral-3;
+}
+
+th {
+    text-align: left;
+    padding: 0 1rem 1rem 1rem;
+}
+
+td {
+    padding: 1rem;
+}
