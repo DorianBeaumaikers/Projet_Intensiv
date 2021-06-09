@@ -120,6 +120,21 @@ blockquote, .blockquote {
     font-size: 1rem;
 }
 
+.box {
+    border: solid 1px $color-neutral-1;
+    padding: 1.5rem;
+}
+
+pre {
+    margin: 0 0 2rem 0;
+    color: $code-color;
+    background: $code-background;
+    padding: $code-padding;
+    border: $code-border;
+    line-height: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
 hr, .hr {
     height: $hr-height;
     background: $hr-color;
