@@ -49,6 +49,7 @@ li {
 
 .icons {
     padding: $padding-icons;
+    display: inline-block;
     li {
         display: $display-icons-li;
         padding: $padding-icons-li;
