@@ -1,12 +1,198 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projet Intensiv'</title>
-</head>
-<body>
-    <a href="./elements.html">Elements</a>
-</body>
+    <link rel="stylesheet" href="./scss/app.scss" />
+    <script
+      src="https://kit.fontawesome.com/013ba047e3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="container">
+    <header class="main-header">
+      <div class="text-center">
+        <h1 class="title1">THIS IS<br />INTENSIV'</h1>
+        <p>
+          A fully responsive HTML5 + CSS3 design <a href="#">Besweb</a> for
+          <a href="#">IEPS</a><br />
+          and released for free under <a href="#">Creative Commons license.</a>
+        </p>
+        <p>
+          <i class="fas fa-arrow-down alt"></i>
+        </p>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li class="isActive">
+            <a href="./index.html"><h5>THIS IS INTENSIV'</h5></a>
+          </li>
+          <li>
+            <a href=""><h5>GENERIC PAGE</h5></a>
+          </li>
+          <li>
+            <a href="./elements.html"><h5>ELEMENTS REFERENCE</h5></a>
+          </li>
+        </ul>
+        <ul class="icons">
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-github"></i></li>
+        </ul>
+      </nav>
+      <div class="main-content grid grid-no-gap">
+        <article class="mainCard text-center">
+            <p class="bars">April 25, 2017 | Author: Bill Crimpson</p>
+
+          <h2 class="h1">AND THIS IS A INTENSIV' HEADLINE</h2>
+          <p class="sub2">
+            Aenean ornare velit lacus varius enim ullamcorper proin aliquam
+            <br />
+            facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor
+            <br />
+            amet nullam sed etiam veroeros.
+          </p>
+          <img src="./assets/images/pic04.jpg" alt="" class="fit" />
+          <a href="#" class="button default">FULL STORY</a>
+        </article>
+        <article class="card text-center col-m-6">
+          <p>April 24, 2017 | Author: Bill Crimpson</p>
+          <h2>SED MAGNA IPSUM FAUCIBUS</h2>
+          <img src="./assets/images/pic04.jpg" alt="" class="fit" />
+          <p>
+            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
+            mattis sagittis magna etiam.
+          </p>
+          <a href="#" class="button default">FULL STORY</a>
+        </article>
+        <article class="card text-center cardRight col-m-6">
+          <p>April 22, 2017 | Author: Bill Crimpson</p>
+          <h2>PRIMIS EGET IMPERDIET LOREM</h2>
+          <img src="./assets/images/pic04.jpg" alt="" class="fit" />
+          <p>
+            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
+            mattis sagittis magna etiam.
+          </p>
+          <a href="#" class="button default">FULL STORY</a>
+        </article>
+        <article class="card text-center col-m-6">
+          <p>April 18, 2017 | Author: Bill Crimpson</p>
+          <h2>ANTE MATTIS INTERDUM DOLOR</h2>
+          <img src="./assets/images/pic04.jpg" alt="" class="fit" />
+          <p>
+            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
+            mattis sagittis magna etiam.
+          </p>
+          <a href="#" class="button default">FULL STORY</a>
+        </article>
+        <article class="card text-center cardRight col-m-6">
+          <p>April 14, 2017 | Author: Bill Crimpson</p>
+          <h2>TEMPUS SED NULLA IMPERDIET</h2>
+          <img src="./assets/images/pic04.jpg" alt="" class="fit" />
+          <p>
+            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
+            mattis sagittis magna etiam.
+          </p>
+          <a href="#" class="button default">FULL STORY</a>
+        </article>
+        <article class="card text-center cardBottom col-m-6">
+          <p>April 11, 2017 | Author: Bill Crimpson</p>
+          <h2>ODIO MAGNA SED CONSECTETUR</h2>
+          <img src="./assets/images/pic04.jpg" alt="" class="fit" />
+          <p>
+            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
+            mattis sagittis magna etiam.
+          </p>
+          <a href="#" class="button default">FULL STORY</a>
+        </article>
+        <article class="card text-center cardRight cardBottom col-m-6">
+          <p>April 7, 2017 | Author: Bill Crimpson</p>
+          <h2>AUGUE LOREM PRIMIS VESTIBULUM</h2>
+          <img src="./assets/images/pic04.jpg" alt="" class="fit" />
+          <p>
+            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
+            mattis sagittis magna etiam.
+          </p>
+          <a href="#" class="button default">FULL STORY</a>
+        </article>
+        <div class="pageNav">
+          <ul>
+            <li><a href="#" class="button default pageNum isActive">1</a></li>
+            <li><a href="#" class="button default pageNum">2</a></li>
+            <li><a href="#" class="button default pageNum">3</a></li>
+            <li><a href="#" class="button default pageDot">...</a></li>
+            <li><a href="#" class="button default pageNum">8</a></li>
+            <li><a href="#" class="button default pageNum">9</a></li>
+            <li><a href="#" class="button default pageNum">10</a></li>
+            <li><a href="#" class="button default">NEXT ></a></li>
+          </ul>
+        </div>
+      </div>
+      <footer class="main-footer grid">
+        <form action="" class="col-m-6 formContainer">
+          <div class="footerForm">
+            <label for="nameFooter" class="h5">NAME</label>
+            <input type="text" id="nameFooter" />
+          </div>
+          <div class="footerForm">
+            <label for="emailFooter" class="h5">EMAIL</label>
+            <input type="email" id="emailFooter" />
+          </div>
+          <div class="footerForm">
+            <label for="messageFooter" class="h5">MESSAGE</label>
+            <textarea id="messageFooter" cols="30" rows="10"></textarea>
+          </div>
+          <div class="footerForm">
+            <input type="submit" value="SEND MESSAGE" class="button default" />
+          </div>
+        </form>
+        <div class="col-m-6 infoContainer">
+          <div class="footerInfo top">
+            <h5>ADDRESS</h5>
+            <p>
+              9 rue Charles Deliège 4247 <br />
+              Fléron, TN 00000-0000
+            </p>
+          </div>
+          <div class="footerInfo">
+            <h5>PHONE</h5>
+            <p>
+              <a href="">(000) 000-0000</a>
+            </p>
+          </div>
+          <div class="footerInfo">
+            <h5>EMAIL</h5>
+            <p>
+              <a href="">info@untitled.tld</a>
+            </p>
+          </div>
+          <div class="footerInfo bottom">
+            <h5 class="social">SOCIAL</h5>
+            <ul class="icons">
+              <li><i class="fab fa-twitter alt text-center"></i></li>
+              <li><i class="fab fa-facebook-f alt text-center"></i></li>
+              <li><i class="fab fa-instagram alt text-center"></i></li>
+              <li><i class="fab fa-github alt text-center"></i></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <footer class="siteFooter">
+      <p class="h5">
+        &copy; UNTITLED <span>|</span> DESIGN: <a href="#">IEPS</a>
+      </p>
+    </footer>
+  </body>
 </html>

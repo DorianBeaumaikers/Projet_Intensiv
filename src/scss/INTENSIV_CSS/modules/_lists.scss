@@ -58,15 +58,16 @@ li {
             padding: $padding-icons-i;
             font-size: $font-size-icons-i;
         }
-        .alt {
-            padding: $padding-icons-alt;
-            font-size: $font-size-icons-alt;
-            width: $width-icons-alt;
-            line-height: $line-height-icons-alt;
-            border: $border-icons-alt;
-            border-radius: $border-radius-icons-alt;
-        }
     }
+}
+
+.alt {
+    padding: $padding-icons-alt;
+    font-size: $font-size-icons-alt;
+    width: $width-icons-alt;
+    line-height: $line-height-icons-alt;
+    border: $border-icons-alt;
+    border-radius: $border-radius-icons-alt;
 }
 
 dl {
