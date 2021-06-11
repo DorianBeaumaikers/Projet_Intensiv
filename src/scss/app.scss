@@ -136,35 +136,38 @@ nav {
 }
 
 .mainCard {
-    padding: 0 7rem 7rem 7rem;
+    padding: 0 3rem 7rem 3rem;
+    @media screen and (min-width: 768px) {
+        padding: 0 7rem 7rem 7rem;
+    }
     h2 {
-        max-width: 90%;
         margin: 0 auto;
     }
     img {
         margin-bottom: 3rem;
     }
-    .bars {
-        display: flex;
-        align-items: center;
-        text-align: center;
-      }
-      
-      .bars::before,
-      .bars::after {
-        content: '';
-        flex: 1;
-        border-bottom: 1px solid $color-neutral-1;
-      }
-      
-      .bars::before {
-        margin-right: 1rem;
-      }
-      
-      .bars::after {
-        margin-left: 1rem;
-      }
 }
+
+.bars {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .bars::before,
+  .bars::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid $color-neutral-1;
+  }
+  
+  .bars::before {
+    margin-right: 1rem;
+  }
+  
+  .bars::after {
+    margin-left: 1rem;
+  }
 
 .card {
     padding: 3rem 4rem;
