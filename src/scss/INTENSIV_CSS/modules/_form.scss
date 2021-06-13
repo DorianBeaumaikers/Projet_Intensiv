@@ -1,29 +1,47 @@
 // FORM VARIABLES
 
+    //INPUT
+    $input-appearance: none;
+    $input-border: solid 2px $color-neutral-1;
+    $input-margin-bottom: 1.5rem;
+
+    //INPUT TEXT, INPUT EMAIL, SELECT
+    $input-S-height: 2.5rem;
+
+    //INPUT TEXT, INPUT EMAIL, SELECT, TEXTAREA
+    $input-S-T-font-family: $font-1;
+    $input-S-T-padding: 0 0 0 1rem;
+
+    //INPUT RADIO CHECKBOX
+    $input-R-C-display: inline-block;
+    $input-R-C-margin: -0.1rem;
+    $input-R-C-border: 0;
+    $input-R-C-z-index: -1;
+
 
 
 // CLASSES
 
 input {
-    appearance: none;
-    border: solid 2px $color-neutral-1;
-    margin-bottom: 1.5rem;
+    appearance: $input-appearance;
+    border: $input-border;
+    margin-bottom: $input-margin-bottom;
 }
 
 input[type="text"], input[type="email"], select {
-    height: 2.5rem;
+    height: $input-S-height;
 }
 
 input[type="text"], input[type="email"], select, textarea {
-    font-family: $font-1;
-    padding: 0 0 0 1rem;
+    font-family: $input-S-T-font-family;
+    padding: $input-S-T-padding;
 }
 
 input[type="radio"], input[type="checkbox"] {
-    display: inline-block;
-    margin: -0.1rem;
-    border: 0;
-    z-index: -1;
+    display: $input-R-C-display;
+    margin: $input-R-C-margin;
+    border: $input-R-C-border;
+    z-index: $input-R-C-z-index;
 }
 
 input[type="radio"] + label , input[type="checkbox"] + label {

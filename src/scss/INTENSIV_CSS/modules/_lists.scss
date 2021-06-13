@@ -68,6 +68,9 @@ li {
     line-height: $line-height-icons-alt;
     border: $border-icons-alt;
     border-radius: $border-radius-icons-alt;
+    &:hover {
+        border-color: $color-1;
+    }
 }
 
 dl {

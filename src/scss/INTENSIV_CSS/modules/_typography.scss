@@ -55,7 +55,7 @@
     $link-color: $color-text;
     $link-decoration: underline dotted;
     
-    $link-hover-color: $color-text;
+    $link-hover-color: $color-1;
     $link-hover-decoration: none;
 
     // CODE
@@ -98,6 +98,7 @@ p {
 a, .link {
     color: $link-color;
     text-decoration: $link-decoration;
+    transition: all 200ms ease-in-out;
     &:hover {
         color: $link-hover-color;
         text-decoration: $link-hover-decoration;
@@ -194,6 +195,12 @@ h6, .h6 {
     line-height: $line-height-h6;
     margin: $margin-h6;
     letter-spacing: $letter-spacing-h6;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    a {
+        text-decoration: none;
+    }
 }
 
 .sub2 {

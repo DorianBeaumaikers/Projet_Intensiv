@@ -1,21 +1,10 @@
-let test = document.querySelector(".header1");
-let test2 = document.querySelector(".header2");
-
 let test3 = document.querySelector(".hamburger");
 let sideNav = document.querySelector(".sideNav");
 let navClose = document.querySelector(".sideNav-close");
 
 window.onscroll = function() {
-    if(window.scrollY >= 200) {
-        test.classList.add("hidden");
-        test2.classList.remove("hidden");
-    }
-    else {
-        test.classList.remove("hidden");
-        test2.classList.add("hidden");
-    }
 
-    if(window.scrollY >= 640) {
+    if(window.scrollY >= 240) {
         test3.classList.add("onTop");
     }
     else {
@@ -40,6 +29,3 @@ document.onclick = function() {
 navClose.onclick = function() {
     sideNav.style.right = "-300px";
 }
-
-
-

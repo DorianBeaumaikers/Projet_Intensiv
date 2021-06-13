@@ -1,68 +1,100 @@
 // ACTIONS VARIABLES
 
     //BUTTONS
-
+    $button-display: inline-block;
+    $button-padding: 0;
+    $button-font-family: $font-2;
+    $button-text-decoration: none;
+    $button-font-size: 1rem;
+    $button-border: solid 3px $color-text;
+    $button-min-width: 9em;
+    $button-line-height: 3em;
+    $button-text-align: center;
+    $button-cursor: pointer;
+    $button-transition: all 200ms ease-in-out;
+    //BUTTONS HOVER
+    $button-hover-border-color: $color-1;
+    //BUTTONS I
+    $button-i-padding-right: 0.5rem;
 
     //PRIMARY
-    
+    $primary-background-color: $color-text;
+    $primary-color: $color-neutral-1;
+    //PRIMARY HOVER
+    $primary-hover-background-color: $color-1;
+    $primary-hover-color: $color-neutral-1;
 
     //DEFAULT
-
+    $default-background-color: #fff;
+    $default-color: $color-text;
+    //DEFAULT HOVER
+    $default-hover-color: $color-1;
 
     //SMALL
-
-    //MEDIUM
+    $small-font-size: 0.8rem;
+    $small-min-width: 8em;
 
     //LARGE
+    $large-font-size: 1.2rem;
+
+    //FIT
+    $fit-width: 100%;
+
+    //DISABLED
+    $disabled-opacity: 30%;
 
 // CLASSES
 
 .button {
-    display: inline-block;
-    padding: 0;
-    font-family: $font-2;
-    text-decoration: none;
-    font-size: 1rem;
-    border: solid 3px $color-text;
-    min-width: 9em;
-    line-height: 3em;
-    text-align: center;
-    cursor: pointer;
+    display: $button-display;
+    padding: $button-padding;
+    font-family: $button-font-family;
+    text-decoration: $button-text-decoration;
+    font-size: $button-font-size;
+    border: $button-border;
+    min-width: $button-min-width;
+    line-height: $button-line-height;
+    text-align: $button-text-align;
+    cursor: $button-cursor;
+    transition: $button-transition;
     i {
-        padding-right: 0.5rem;
+        padding-right: $button-i-padding-right;
+    }
+    &:hover {
+        border-color: $button-hover-border-color;
     }
 }
 
 .primary {
-    background-color: $color-text;
-    color: $color-neutral-1;
+    background-color: $primary-background-color;
+    color: $primary-color;
     &:hover {
-        color: $color-neutral-1;
+        background-color: $primary-hover-background-color;
+        color: $primary-hover-color;
     }
 }
 
 .default {
-    background-color: #fff;
-    color: $color-text;
-
+    background-color: $default-background-color;
+    color: $default-color;
     &:hover {
-        color: $color-text;
+        color: $default-hover-color;
     }
 }
 
 .small {
-    font-size: 0.8rem;
-    min-width: 8em;
+    font-size: $small-font-size;
+    min-width: $small-min-width;
 }
 
 .large {
-    font-size: 1.2rem;
+    font-size: $large-font-size;
 }
 
 .fit {
-    width: 100%;
+    width: $fit-width;
 }
 
 .disabled {
-    opacity: 30%;
+    opacity: $disabled-opacity;
 }

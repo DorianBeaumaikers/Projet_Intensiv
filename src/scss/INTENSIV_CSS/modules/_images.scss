@@ -4,6 +4,17 @@
 
 // CLASSES 
 
+.zoom {
+    transition: all 300ms ease-in-out;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
 .fit {
     display: block;
     width: 100%;

@@ -4,23 +4,28 @@
     $color-1: #18BFEF;
     $color-2: #4E403D;
     $color-text: #212931;
-    $color-neutral-1: #F6F6F6;
-    //$color-neutral-1: #E2E2E2;
+    //$color-neutral-1: #F6F6F6;
+    $color-neutral-1: #E2E2E2;
     $color-neutral-2: #717981;
     $color-neutral-3 : #E2E2E2; 
 
     $color-block-dim: 120px;
+    $color-bloc-display: inline-flex;
+    $color-block-justify-content: center;
+    $color-block-align-items: center;
+    $color-block-color: #fff;
+    $color-block-margin: .1rem 0;
 
 // COLOR BLOCKS
 
 .color-block {
     width: $color-block-dim;
     height: $color-block-dim;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    margin: .1rem 0;
+    display: $color-bloc-display;
+    justify-content: $color-block-justify-content;
+    align-items: $color-block-align-items;
+    color: $color-block-color;
+    margin: $color-block-margin;
 
     &.color-1 {
         background: $color-1;
