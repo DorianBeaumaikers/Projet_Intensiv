@@ -1,22 +1,54 @@
 // TABLES VARIABLES
 
+    // TABLE
+    $table-margin: 0 0 2rem 0;
+    $table-width: 100%;
+    $table-border-collapse: collapse;
+    $table-border-spacing: 0;
 
+    // TABLE ALT
+    $-table-alt-border-collapse: separate;
 
+    // TD
+    $td-padding: 1rem;
+
+    // TD ALT
+    $td-alt-border: solid 1px $color-neutral-3;
+
+    // THEAD
+    $thead-font-family: $font-2;
+    $thead-font-size: 1rem;
+    $thead-border-bottom: solid 2px $color-neutral-3;
+
+    // TR
+    $tr-border: solid 1px $color-neutral-3;
+    $tr-border-left: 0;
+    $tr-border-right: 0;
+
+    // TR IMPAIR
+    $tr-impair-background-color: $color-neutral-1;
+
+    // TFOOT
+    $tfoot-border-top: solid 2px $color-neutral-3;
+
+    // TH
+    $th-text-align: left;
+    $th-padding: 0 1rem 1rem 1rem;
 
 
 // CLASSES
 
 table {
- margin: 0 0 2rem 0;
- width: 100%;
- border-collapse: collapse;
- border-spacing: 0;
+ margin: $table-margin;
+ width: $table-width;
+ border-collapse: $table-border-collapse;
+ border-spacing: $table-border-spacing;
  &.tableAlt {
-     border-collapse: separate;
+     border-collapse: $-table-alt-border-collapse;
      tbody {
          tr {
              td {
-                 border: solid 1px $color-neutral-3;
+                 border: $td-alt-border;
              }
          }
      }
@@ -24,31 +56,31 @@ table {
 }
 
 thead {
-    font-family: $font-2;
-    font-size: 1rem;
-    border-bottom: solid 2px $color-neutral-3;
+    font-family: $thead-font-family;
+    font-size: $thead-font-size;
+    border-bottom: $thead-border-bottom;
 }
 
 tbody {
-    tr:nth-child(2n+1) {
-        background-color: $color-neutral-1;
-    }
     tr {
-        border: solid 1px $color-neutral-3;
-        border-left: 0;
-        border-right: 0;
+        border: $tr-border;
+        border-left: $tr-border-left;
+        border-right: $tr-border-right;
+    }
+    tr:nth-child(2n+1) {
+        background-color: $tr-impair-background-color;
     }
 }
 
 tfoot {
-    border-top: solid 2px $color-neutral-3;
+    border-top: $tfoot-border-top;
 }
 
 th {
-    text-align: left;
-    padding: 0 1rem 1rem 1rem;
+    text-align: $th-text-align;
+    padding: $th-padding;
 }
 
 td {
-    padding: 1rem;
+    padding: $td-padding;
 }

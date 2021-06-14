@@ -1,29 +1,29 @@
-let test = document.querySelector(".header1");
-let test2 = document.querySelector(".header2");
+let header1 = document.querySelector(".header1");
+let header2 = document.querySelector(".header2");
 
-let test3 = document.querySelector(".hamburger");
+let hamburger = document.querySelector(".hamburger");
 let sideNav = document.querySelector(".sideNav");
 let navClose = document.querySelector(".sideNav-close");
 
 window.onscroll = function() {
     if(window.scrollY >= 200) {
-        test.classList.add("hidden");
-        test2.classList.remove("hidden");
+        header1.classList.add("hidden");
+        header2.classList.remove("hidden");
     }
     else {
-        test.classList.remove("hidden");
-        test2.classList.add("hidden");
+        header1.classList.remove("hidden");
+        header2.classList.add("hidden");
     }
 
     if(window.scrollY >= 640) {
-        test3.classList.add("onTop");
+        hamburger.classList.add("onTop");
     }
     else {
-        test3.classList.remove("onTop");
+        hamburger.classList.remove("onTop");
     }
 }
 
-test3.onclick = function(e) {
+hamburger.onclick = function(e) {
     e.stopPropagation();
 
     sideNav.style.right = "0";

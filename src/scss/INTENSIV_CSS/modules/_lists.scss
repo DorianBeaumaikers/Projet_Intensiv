@@ -1,88 +1,103 @@
 // LISTS VARIABLES
 
     // UL
-    $padding-ul: 1rem 0 1rem 1rem;
+    $ul-padding: 1rem 0 1rem 1rem;
 
     // OL
-    $padding-ol: 1rem 0 1rem 1rem;
+    $ol-padding: 1rem 0 1rem 1rem;
 
     // LI
-    $margin-bottom-li: 0.8rem;
-    $padding-left-li: 0.5rem;
+    $li-margin-bottom: 0.8rem;
+    $li-padding-left: 0.5rem;
 
     // ICONS
-    $padding-icons: 0;
-    $display-icons-li: inline-block;
-    $padding-icons-li: 0;
-    $margin-icons-li: 0 0.5rem;
-    $padding-icons-i: 0.5rem;
-    $font-size-icons-i: 1.15rem;
-    $padding-icons-alt: 0;
-    $font-size-icons-alt: 1rem;
-    $width-icons-alt: 2em;
-    $line-height-icons-alt: 1.95rem;
-    $border-icons-alt: solid 1px $color-neutral-2;
-    $border-radius-icons-alt: 100%;
+    $icons-padding: 0;
+    $icons-display: inline-block;
+
+    // ICONS LI
+    $icons-li-display: inline-block;
+    $icons-li-padding: 0;
+    $icons-li-margin: 0 0.5rem;
+
+    // ICONS I
+    $icons-i-padding: 0.5rem;
+    $icons-i-font-size: 1.15rem;
+
+    // ICONS ALT
+    $icons-alt-padding: 0;
+    $icons-alt-font-size: 1rem;
+    $icons-alt-width: 2em;
+    $icons-alt-line-height: 1.95rem;
+    $icons-alt-border: solid 1px $color-neutral-2;
+    $icons-alt-border-radius: 100%;
+
+    // ICONS ALT :HOVER
+    $icons-alt-hover-border-color: $color-1;
 
     // DEFINITION
-    $margin-top-dl: 0;
-    $font-weight-dt: 900;
-    $margin-top-dd: 1rem;
-    $margin-bottom-dd: 2rem;
-    $line-height-dd: 2.5rem;
+    // DL
+    $dl-margin-top: 0;
+
+    // DT
+    $dt-font-weight: 900;
+
+    // DD
+    $dd-margin-top: 1rem;
+    $dd-margin-bottom: 2rem;
+    $dd-line-height: 2.5rem;
 
 
 // CLASSES
 
 ul {
-    padding: $padding-ul;
+    padding: $ul-padding;
 }
 
 ol {
-    padding: $padding-ol;
+    padding: $ol-padding;
 }
 
 li {
-    margin-bottom: $margin-bottom-li;
-    padding-left: $padding-left-li;
+    margin-bottom: $li-margin-bottom;
+    padding-left: $li-padding-left;
 }
 
 .icons {
-    padding: $padding-icons;
-    display: inline-block;
+    padding: $icons-padding;
+    display: $icons-display;
     li {
-        display: $display-icons-li;
-        padding: $padding-icons-li;
-        margin: $margin-icons-li;
+        display: $icons-li-display;
+        padding: $icons-li-padding;
+        margin: $icons-li-margin;
         i {
-            padding: $padding-icons-i;
-            font-size: $font-size-icons-i;
+            padding: $icons-i-padding;
+            font-size: $icons-i-font-size;
         }
     }
 }
 
 .alt {
-    padding: $padding-icons-alt;
-    font-size: $font-size-icons-alt;
-    width: $width-icons-alt;
-    line-height: $line-height-icons-alt;
-    border: $border-icons-alt;
-    border-radius: $border-radius-icons-alt;
+    padding: $icons-alt-padding;
+    font-size: $icons-alt-font-size;
+    width: $icons-alt-width;
+    line-height: $icons-alt-line-height;
+    border: $icons-alt-border;
+    border-radius: $icons-alt-border-radius;
     &:hover {
-        border-color: $color-1;
+        border-color: $icons-alt-hover-border-color;
     }
 }
 
 dl {
-    margin-top: $margin-top-dl;
+    margin-top: $dl-margin-top;
 }
 
 dt {
-    font-weight: $font-weight-dt;
+    font-weight: $dt-font-weight;
 }
 
 dd {
-    margin-top: $margin-top-dd;
-    margin-bottom: $margin-bottom-dd;
-    line-height: $line-height-dd;
+    margin-top: $dd-margin-top;
+    margin-bottom: $dd-margin-bottom;
+    line-height: $dd-line-height;
 }

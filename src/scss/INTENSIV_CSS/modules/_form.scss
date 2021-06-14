@@ -1,22 +1,72 @@
 // FORM VARIABLES
 
-    //INPUT
+    // INPUT
     $input-appearance: none;
     $input-border: solid 2px $color-neutral-1;
     $input-margin-bottom: 1.5rem;
 
-    //INPUT TEXT, INPUT EMAIL, SELECT
+    // INPUT TEXT, INPUT EMAIL, SELECT
     $input-S-height: 2.5rem;
 
-    //INPUT TEXT, INPUT EMAIL, SELECT, TEXTAREA
+    // INPUT TEXT, INPUT EMAIL, SELECT, TEXTAREA
     $input-S-T-font-family: $font-1;
     $input-S-T-padding: 0 0 0 1rem;
 
-    //INPUT RADIO CHECKBOX
+    // INPUT RADIO CHECKBOX
     $input-R-C-display: inline-block;
     $input-R-C-margin: -0.1rem;
     $input-R-C-border: 0;
     $input-R-C-z-index: -1;
+
+    // INPUT RADIO CHECKBOX + LABEL
+    $input-R-C-label-position: relative;
+    $input-R-C-label-padding-left: 3rem;
+    $input-R-C-label-display: inline-block;
+    $input-R-C-label-margin-bottom: 1.5rem;
+    $input-R-C-label-cursor: pointer;
+
+    // INPUT RADIO CHECKBOX + LABEL:BEFORE
+    $input-R-C-label-before-display: inline-block;
+    $input-R-C-label-before-content: "";
+    $input-R-C-label-before-border: solid 2px $color-neutral-1;
+    $input-R-C-label-before-height: 1.7rem;
+    $input-R-C-label-before-width: 1.7rem;
+    $input-R-C-label-before-position: absolute;
+    $input-R-C-label-before-left: 0;
+    $input-R-C-label-before-top: 0;
+    $input-R-C-label-before-text-align: center;
+
+    // INPUT RADIO + LABEL:BEFORE
+    $input-R-label-before-border-radius: 100%;
+
+    // INPUT RADIO CHECKBOX CHECKED + LABEL:BEFORE
+    $input-R-C-checked-label-before-font-family: 'Font Awesome 5 Free';
+    $input-R-C-checked-label-before-font-weight: 900;
+    $input-R-C-checked-label-before-font-size: 0.8rem;
+    $input-R-C-checked-label-before-line-height: 1.7rem;
+    $input-R-C-checked-label-before-background-color: $color-text;
+    $input-R-C-checked-label-before-color: $color-neutral-1;
+    $input-R-C-checked-label-before-content: "\f00c";
+
+    // SELECT
+    $select-appearance: none;
+    $select-cursor: pointer;
+    $select-margin-bottom: 1.5rem;
+    $select-border: solid 2px $color-neutral-1;
+    $select-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dddddd' /%3E%3C/svg%3E");
+    $select-background-repeat: no-repeat;
+    $select-background-size: 2rem;
+    $select-background-position: calc(100% - 1rem) center;
+
+    // TEXTAREA
+    $textarea-border: solid 2px $color-neutral-1;
+    $textarea-padding-top: 1rem;
+    $textarea-margin-bottom: 1.5rem;
+    $textarea-height: 15rem;
+
+    // :placeholder
+    $placeholder-color: $color-neutral-2;
+    $placeholder-opacity: 0.6;
 
 
 
@@ -45,58 +95,58 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 input[type="radio"] + label , input[type="checkbox"] + label {
-    position: relative;
-    padding-left: 3rem;
-    display: inline-block;
-    margin-bottom: 1.5rem;
-    cursor: pointer;
+    position: $input-R-C-label-position;
+    padding-left: $input-R-C-label-padding-left;
+    display: $input-R-C-label-display;
+    margin-bottom: $input-R-C-label-margin-bottom;
+    cursor: $input-R-C-label-cursor;
 }
 
 input[type="radio"] + label:before , input[type="checkbox"] + label:before {
-    display: inline-block;
-    content: "";
-    border: solid 2px $color-neutral-1;
-    height: 1.7rem;
-    width: 1.7rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-    text-align: center;
+    display: $input-R-C-label-before-display;
+    content: $input-R-C-label-before-content;
+    border: $input-R-C-label-before-border;
+    height: $input-R-C-label-before-height;
+    width: $input-R-C-label-before-width;
+    position: $input-R-C-label-before-position;
+    left: $input-R-C-label-before-left;
+    top: $input-R-C-label-before-top;
+    text-align: $input-R-C-label-before-text-align;
 }
 
 input[type="radio"] + label:before {
-    border-radius: 100%;
+    border-radius: $input-R-label-before-border-radius;
 }
 
 input[type="radio"]:checked + label:before , input[type="checkbox"]:checked + label:before {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 0.8rem;
-    line-height: 1.7rem;
-    background-color: $color-text;
-    color: $color-neutral-1;
-    content: "\f00c";
+    font-family: $input-R-C-checked-label-before-font-family;
+    font-weight: $input-R-C-checked-label-before-font-weight;
+    font-size: $input-R-C-checked-label-before-font-size;
+    line-height: $input-R-C-checked-label-before-line-height;
+    background-color: $input-R-C-checked-label-before-background-color;
+    color: $input-R-C-checked-label-before-color;
+    content: $input-R-C-checked-label-before-content;
 }
 
 select {
-    appearance: none;
-    cursor: pointer;
-    margin-bottom: 1.5rem;
-    border: solid 2px $color-neutral-1;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dddddd' /%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-size: 2rem;
-    background-position: calc(100% - 1rem) center;
+    appearance: $select-appearance;
+    cursor: $select-cursor;
+    margin-bottom: $select-margin-bottom;
+    border: $select-border;
+    background-image: $select-background-image;
+    background-repeat: $select-background-repeat;
+    background-size: $select-background-size;
+    background-position: $select-background-position;
 }
 
 textarea {
-    border: solid 2px $color-neutral-1;
-    padding-top: 1rem;
-    margin-bottom: 1.5rem;
-    height: 15rem;
+    border: $textarea-border;
+    padding-top: $textarea-padding-top;
+    margin-bottom: $textarea-margin-bottom;
+    height: $textarea-height;
 }
 
 ::placeholder {
-    color: $color-neutral-2;
-    opacity: 60%;
+    color: $placeholder-color;
+    opacity: $placeholder-opacity;
 }

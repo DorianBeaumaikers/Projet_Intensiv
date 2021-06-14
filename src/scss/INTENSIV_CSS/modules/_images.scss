@@ -1,33 +1,55 @@
 // IMAGES VARIABLES
 
+    // ZOOM
+    $zoom-transition: all 300ms ease-in-out;
+
+    // ZOOM :HOVER
+    $zoom-hover-transform: scale(1.2);
+
+    // WRAPPER
+    $wrapper-overflow: hidden;
+
+    // FIT
+    $fit-display: block;
+    $fit-width: 100%;
+
+    // LEFT
+    $left-max-width: 40%;
+    $left-float: left;
+    $left-margin: 0.8rem 2rem 1.5rem 0;
+
+    // RIGHT
+    $right-max-width: 40%;
+    $right-float: right;
+    $right-margin: 0.8rem 0 1.5rem 2rem;
 
 
 // CLASSES 
 
 .zoom {
-    transition: all 300ms ease-in-out;
+    transition: $zoom-transition;
     &:hover {
-        transform: scale(1.2);
+        transform: $zoom-hover-transform;
     }
 }
 
 .wrapper {
-    overflow: hidden;
+    overflow: $wrapper-overflow;
 }
 
 .fit {
-    display: block;
-    width: 100%;
+    display: $fit-display;
+    width: $fit-width;
 }
 
 .left {
-    max-width: 40%;
-    float: left;
-    margin: 0.8rem 2rem 1.5rem 0;
+    max-width: $left-max-width;
+    float: $left-float;
+    margin: $left-margin;
 }
 
 .right {
-    max-width: 40%;
-    float: right;
-    margin: 0.8rem 0 1.5rem 2rem;
+    max-width: $right-max-width;
+    float: $right-float;
+    margin: $right-margin;
 }

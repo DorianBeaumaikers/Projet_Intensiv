@@ -1,18 +1,18 @@
-let test3 = document.querySelector(".hamburger");
+let hamburger = document.querySelector(".hamburger");
 let sideNav = document.querySelector(".sideNav");
 let navClose = document.querySelector(".sideNav-close");
 
 window.onscroll = function() {
 
     if(window.scrollY >= 240) {
-        test3.classList.add("onTop");
+        hamburger.classList.add("onTop");
     }
     else {
-        test3.classList.remove("onTop");
+        hamburger.classList.remove("onTop");
     }
 }
 
-test3.onclick = function(e) {
+hamburger.onclick = function(e) {
     e.stopPropagation();
 
     sideNav.style.right = "0";

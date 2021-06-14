@@ -1,6 +1,6 @@
 // ACTIONS VARIABLES
 
-    //BUTTONS
+    // BUTTONS
     $button-display: inline-block;
     $button-padding: 0;
     $button-font-family: $font-2;
@@ -12,36 +12,36 @@
     $button-text-align: center;
     $button-cursor: pointer;
     $button-transition: all 200ms ease-in-out;
-    //BUTTONS HOVER
+    // BUTTONS HOVER
     $button-hover-border-color: $color-1;
-    //BUTTONS I
+    // BUTTONS I
     $button-i-padding-right: 0.5rem;
 
-    //PRIMARY
+    // PRIMARY
     $primary-background-color: $color-text;
     $primary-color: $color-neutral-1;
-    //PRIMARY HOVER
+    // PRIMARY HOVER
     $primary-hover-background-color: $color-1;
     $primary-hover-color: $color-neutral-1;
 
-    //DEFAULT
+    // DEFAULT
     $default-background-color: #fff;
     $default-color: $color-text;
-    //DEFAULT HOVER
+    // DEFAULT HOVER
     $default-hover-color: $color-1;
 
-    //SMALL
+    // SMALL
     $small-font-size: 0.8rem;
     $small-min-width: 8em;
 
-    //LARGE
+    // LARGE
     $large-font-size: 1.2rem;
 
-    //FIT
+    // FIT
     $fit-width: 100%;
 
-    //DISABLED
-    $disabled-opacity: 30%;
+    // DISABLED
+    $disabled-opacity: 0.3;
 
 // CLASSES
 
@@ -91,7 +91,7 @@
     font-size: $large-font-size;
 }
 
-.fit {
+.btnFit {
     width: $fit-width;
 }
 

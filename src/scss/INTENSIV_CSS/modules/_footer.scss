@@ -1,0 +1,97 @@
+// ------------------------------
+// MAIN FOOTER
+// ------------------------------
+.main-footer {
+    background-color: $color-neutral-1;
+    gap: 0 0;
+    .formContainer {
+        border-right: solid 1px $color-neutral-3;
+        padding: 2rem 2rem 0 2rem;
+        .footerForm {
+            margin: 2rem;
+            input[type = "text"], input[type = "email"] {
+                border-color: $color-neutral-3;
+                background-color: $color-neutral-1;
+                display: block;
+                width: 100%;
+            }
+            input[type = submit] {
+                background-color: $color-neutral-1;
+                opacity: 0.6;
+            }
+            textarea {
+                border-color: $color-neutral-3;
+                background-color: $color-neutral-1;
+                display: block;
+                width: 100%;
+                height: 10rem;
+            }
+            label {
+                opacity: 0.6;
+            }
+        }
+    }
+    .infoContainer {
+        .footerInfo {
+            padding: 3.5rem 3rem;
+            border-top: solid 1px $color-neutral-3;
+            border-bottom: solid 1px $color-neutral-3;
+            h5 {
+                display: inline-block;
+                opacity: 0.6;
+                vertical-align: top;
+                margin-right: 2rem;
+                line-height: 1.7rem;
+            }
+            p {
+                display: inline-block;
+                opacity: 0.6;
+                font-size: 0.9rem;
+                vertical-align: top;
+                line-height: 1.7rem;
+                margin: 0;
+            }
+            .social {
+                padding-top: 0.5rem;
+            }
+            .icons {
+                margin: 0;
+                li {
+                    i {
+                        opacity: 0.6;
+                    }
+                }
+            }
+            &.top {
+                @media screen and (min-width: 768px) {
+                    border-top: 0; 
+                }
+            }
+            &.bottom {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+// ------------------------------
+// SITE FOOTER
+// ------------------------------
+
+.siteFooter {
+    p {
+        text-align: center;
+        color: #fff;
+        opacity: 0.2;
+        margin: 4rem 0 7rem 0;
+    }
+    a {
+        color: #fff;
+        &:hover {
+            color: $color-1;
+        }
+    }
+    span {
+        margin: 0 0.7rem;
+    }
+}

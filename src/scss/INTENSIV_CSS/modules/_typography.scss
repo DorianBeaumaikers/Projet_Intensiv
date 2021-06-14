@@ -6,57 +6,62 @@
     // PARAGRAPHES
     $font-1: 'Merriweather', serif;
 
-    $font-color-default: $color-text;
-    $font-size-default: 1.1em;
-    $font-weight-default: 300;
-    $line-height-default: 2.5rem;
-    $margin-p: 2rem;
+    $body-font-color: $color-text;
+    $body-font-size: 1.1em;
+    $body-font-weight: 300;
+    $body-line-height: 2.5rem;
+    $p-margin: 2rem;
 
     // HEADERS
     $font-2: 'Source Sans Pro', Helvetica, sans-serif;
 
-    $font-color-h1: $color-text;
-    $font-size-h1: 4.5rem;
-    $line-height-h1: 1;
-    $margin-h1: 0 0 3rem 0;
-    $letter-spacing-h1: .2rem;
+    $h1-font-color: $color-text;
+    $h1-font-size: 4.5rem;
+    $h1-line-height: 1;
+    $h1-margin: 0 0 3rem 0;
+    $h1-letter-spacing: .2rem;
 
-    $font-color-h2: $color-text;
-    $font-size-h2: 2.1rem;
-    $line-height-h2: 1.5;
-    $margin-h2: 0 0 1.2rem 0;
-    $letter-spacing-h2: .05rem;
+    $h2-font-color: $color-text;
+    $h2-font-size: 2.1rem;
+    $h2-line-height: 1.5;
+    $h2-margin: 0 0 1.2rem 0;
+    $h2-letter-spacing: .05rem;
 
-    $font-color-h3: $color-text;
-    $font-size-h3: 1.5rem;
-    $line-height-h3: 1.5;
-    $margin-h3: 0 0 1.2rem 0;
-    $letter-spacing-h3: .07rem;
+    $h3-font-color: $color-text;
+    $h3-font-size: 1.5rem;
+    $h3-line-height: 1.5;
+    $h3-margin: 0 0 1.2rem 0;
+    $h3-letter-spacing: .07rem;
 
-    $font-color-h4: $color-text;
-    $font-size-h4: 1.2rem;
-    $line-height-h4: 1.2;
-    $margin-h4: 0 0 1rem 0;
-    $letter-spacing-h4: .05rem;
+    $h4-font-color: $color-text;
+    $h4-font-size: 1.2rem;
+    $h4-line-height: 1.2;
+    $h4-margin: 0 0 1rem 0;
+    $h4-letter-spacing: .05rem;
 
-    $font-color-h5: $color-text;
-    $font-size-h5: 1.1rem;
-    $line-height-h5: 1.2;
-    $margin-h5: 0 0 1rem 0;
-    $letter-spacing-h5: .05rem;
+    $h5-font-color: $color-text;
+    $h5-font-size: 1.1rem;
+    $h5-line-height: 1.2;
+    $h5-margin: 0 0 1rem 0;
+    $h5-letter-spacing: .05rem;
 
-    $font-color-h6: $color-text;
-    $font-size-h6: 1rem;
-    $line-height-h6: 1.2;
-    $margin-h6: 0 0 1rem 0;
-    $letter-spacing-h6: .05rem;
+    $h6-font-color: $color-text;
+    $h6-font-size: 1rem;
+    $h6-line-height: 1.2;
+    $h6-margin: 0 0 1rem 0;
+    $h6-letter-spacing: .05rem;
 
     // LINKS
     $link-color: $color-text;
     $link-decoration: underline dotted;
+    $link-transition: all 200ms ease-in-out;
     
+    // LINKS HOVER
     $link-hover-color: $color-1;
     $link-hover-decoration: none;
+
+    // LINKS IN TITLE
+    $h-a-text-decoration: none;
 
     // CODE
     $code-color: $color-text;
@@ -64,20 +69,44 @@
     $code-padding: .3em;
     $code-border: 1.5px solid $color-neutral-3;
 
+    // BLOCKQUOTE
+    $blockquote-margin-left: 0;
+    $blockquote-padding: 0.7rem 0 0.7rem 2rem;
+    $blockquote-border-left: solid 5px $color-neutral-1;
+    $blockquote-line-height: 2.5rem;
+    $blockquote-font-style: italic;
+    $blockquote-font-size: 1rem;
+
+    // BOX
+    $box-border: solid 1px $color-neutral-1;
+    $box-padding: 1.5rem;
+
+    // PREFORMATTED
+    $pre-margin: 0 0 2rem 0;
+    $pre-color: $color-text;
+    $pre-background: $color-neutral-1;
+    $pre-border: 1.5px solid $color-neutral-3;
+    $pre-line-height: 1.5rem;
+    $pre-padding: 1rem 1.5rem;
+
     // HR
     $hr-height: 1px;
     $hr-color: $color-neutral-1;
     $hr-margin: 3rem 0;
+    $hr-border: none;
 
     // SUBTITLE
-    $font-size-sub2: 1.15rem;
-    $margin-bottom-sub2: 2.5rem;
+    $sub2-font-size: 1.15rem;
+    $sub2-margin-bottom: 2.5rem;
+    $sub2-font-style: italic;
 
-    $font-size-sub3: 1.05rem;
-    $margin-bottom-sub3: 2.5rem;
+    $sub3-font-size: 1.05rem;
+    $sub3-margin-bottom: 2.5rem;
+    $sub3-font-style: italic;
 
-    $font-size-sub4: 0.95rem;
-    $margin-bottom-sub4: 2.5rem;
+    $sub4-font-size: 0.95rem;
+    $sub4-margin-bottom: 2.5rem;
+    $sub4-font-style: italic;
     
 
 
@@ -85,20 +114,20 @@
 
 body, .default {
     font-family: $font-1;
-    font-size: $font-size-default;
-    font-weight: $font-weight-default;
-    line-height: $line-height-default;
-    color: $font-color-default;
+    font-size: $body-font-size;
+    font-weight: $body-font-weight;
+    line-height: $body-line-height;
+    color: $body-font-color;
 }
 
 p {
-    margin-bottom: $margin-p;
+    margin-bottom: $p-margin;
 }
 
 a, .link {
     color: $link-color;
     text-decoration: $link-decoration;
-    transition: all 200ms ease-in-out;
+    transition: $link-transition;
     &:hover {
         color: $link-hover-color;
         text-decoration: $link-hover-decoration;
@@ -113,110 +142,109 @@ code, .code {
 }
 
 blockquote, .blockquote {
-    margin-left: 0;
-    padding: 0.7rem 0 0.7rem 2rem;
-    border-left: solid 5px $color-neutral-1;
-    line-height: 2.5rem;
-    font-style: italic;
-    font-size: 1rem;
+    margin-left: $blockquote-margin-left;
+    padding: $blockquote-padding;
+    border-left: $blockquote-border-left;
+    line-height: $blockquote-line-height;
+    font-style: $blockquote-font-style;
+    font-size: $blockquote-font-size;
 }
 
 .box {
-    border: solid 1px $color-neutral-1;
-    padding: 1.5rem;
+    border: $box-border;
+    padding: $box-padding;
 }
 
 pre {
-    margin: 0 0 2rem 0;
-    color: $code-color;
-    background: $code-background;
-    padding: $code-padding;
-    border: $code-border;
-    line-height: 1.5rem;
-    padding: 1rem 1.5rem;
+    margin: $pre-margin;
+    color: $pre-color;
+    background: $pre-background;
+    padding: $pre-padding;
+    border: $pre-border;
+    line-height: $pre-line-height;
 }
 
 hr, .hr {
     height: $hr-height;
     background: $hr-color;
-    border: none;
+    border: $hr-border;
     margin: $hr-margin;
 }
 
 h1, .h1 {
     font-family: $font-2;
-    color: $font-color-h1;
-    font-size: $font-size-h1;
-    line-height: $line-height-h1;
-    margin: $margin-h1;
-    letter-spacing: $letter-spacing-h1;
+    color: $h1-font-color;
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+    margin: $h1-margin;
+    letter-spacing: $h1-letter-spacing;
 }
 
 h2, .h2 {
     font-family: $font-2;
-    color: $font-color-h2;
-    font-size: $font-size-h2;
-    line-height: $line-height-h2;
-    margin: $margin-h2;
-    letter-spacing: $letter-spacing-h2;
+    color: $h2-font-color;
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    margin: $h2-margin;
+    letter-spacing: $h2-letter-spacing;
 }
 
 h3, .h3 {
     font-family: $font-2;
-    color: $font-color-h3;
-    font-size: $font-size-h3;
-    line-height: $line-height-h3;
-    margin: $margin-h3;
-    letter-spacing: $letter-spacing-h3;
+    color: $h3-font-color;
+    font-size: $h3-font-size;
+    line-height: $h3-line-height;
+    margin: $h3-margin;
+    letter-spacing: $h3-letter-spacing;
 }
 
 h4, .h4 {
     font-family: $font-2;
-    color: $font-color-h4;
-    font-size: $font-size-h4;
-    line-height: $line-height-h4;
-    margin: $margin-h4;
-    letter-spacing: $letter-spacing-h4;
+    color: $h4-font-color;
+    font-size: $h4-font-size;
+    line-height: $h4-line-height;
+    margin: $h4-margin;
+    letter-spacing: $h4-letter-spacing;
 }
 
 h5, .h5 {
     font-family: $font-2;
-    color: $font-color-h5;
-    font-size: $font-size-h5;
-    line-height: $line-height-h5;
-    margin: $margin-h5;
-    letter-spacing: $letter-spacing-h5;
+    color: $h5-font-color;
+    font-size: $h5-font-size;
+    line-height: $h5-line-height;
+    margin: $h5-margin;
+    letter-spacing: $h5-letter-spacing;
 }
 
 h6, .h6 {
     font-family: $font-2;
-    color: $font-color-h6;
-    font-size: $font-size-h6;
-    line-height: $line-height-h6;
-    margin: $margin-h6;
-    letter-spacing: $letter-spacing-h6;
+    color: $h6-font-color;
+    font-size: $h6-font-size;
+    line-height: $h6-line-height;
+    margin: $h6-margin;
+    letter-spacing: $h6-letter-spacing;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     a {
-        text-decoration: none;
+        text-decoration: $h-a-text-decoration;
     }
 }
 
 .sub2 {
-    font-style: italic;
-    font-size: $font-size-sub2;
-    margin-bottom: $margin-bottom-sub2;
+    font-style: $sub2-font-style;
+    font-size: $sub2-font-size;
+    margin-bottom: $sub2-margin-bottom;
 }
 
 .sub3 {
-    font-style: italic;
-    font-size: $font-size-sub3;
-    margin-bottom: $margin-bottom-sub3;
+    font-style: $sub3-font-style;
+    font-size: $sub3-font-size;
+    margin-bottom: $sub3-margin-bottom;
 }
 
 .sub4 {
-    font-style: italic;
-    font-size: $font-size-sub4;
-    margin-bottom: $margin-bottom-sub4;
+    font-style: $sub4-font-style;
+    font-size: $sub4-font-size;
+    margin-bottom: $sub4-margin-bottom;
 }
