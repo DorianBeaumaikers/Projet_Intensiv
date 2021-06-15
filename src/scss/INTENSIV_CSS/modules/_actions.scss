@@ -42,6 +42,7 @@
 
     // DISABLED
     $disabled-opacity: 0.3;
+    $disabled-cursor: default;
 
 // CLASSES
 
@@ -97,4 +98,5 @@
 
 .disabled {
     opacity: $disabled-opacity;
+    cursor: $disabled-cursor;
 }

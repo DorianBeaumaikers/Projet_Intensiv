@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./",
-    "clean": "rmdir /s /q dist .cache"
+    "clean": "rmdir /s /q dist .cache .parcel-cache"
   },
   "repository": {
     "type": "git",
@@ -18,12 +18,11 @@
     "url": "https://github.com/DorianBeaumaikers/Projet_Intensiv/issues"
   },
   "homepage": "https://github.com/DorianBeaumaikers/Projet_Intensiv#readme",
-  "dependencies": {
-    "parcel": "*"
-  },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.0.0-beta.2",
     "@parcel/transformer-jsonld": "^2.0.0-beta.2",
-    "@parcel/transformer-sass": "^2.0.0-beta.2"
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "parcel": "*",
+    "parcel-plugin-purgecss": "^3.0.0"
   }
 }
